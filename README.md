@@ -1,2 +1,2 @@
-# GoldenGate_RestAPI
+# GoldenGateRestAPI
 Examples of RestAPI for GoldenGate
