@@ -21,7 +21,7 @@ os.system('clear')
 requests.packages.urllib3.disable_warnings()
 
 # Url and PORT for GOldengate HUB
-goldengate_hub_url="https://150.230.169.166"
+goldengate_hub_url="https://<IP or hostname>"
 
 # Authentication
 header = {"Authorization" : "Basic b2dnYWRtaW46eTR2RkdoV242SUNTLXNxZA=="}
