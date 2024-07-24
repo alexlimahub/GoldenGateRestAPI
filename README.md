@@ -15,6 +15,7 @@ Before deploying it to any production environment, make sure to thoroughly test 
 * Info Checks
 * Create Replicat
 * Delete Replicat
-* create_replication.sh script is a complete bi-direction configuration with output from terraform 
 * Check for long Transactions
+* create_replication.sh script is a complete bi-direction configuration with output from terraform 
+
 
