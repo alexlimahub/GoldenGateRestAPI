@@ -40,4 +40,10 @@ Before deploying it to any production environment, make sure to test and validat
 * ***OpenTransaction.py*** and ***check_gg_longtransations.sh*** are scripts to check if there is an open transaction in the database (Python)
 * ***check_gg_processes.py*** is a script to check the HUB process status with custom output
 
+## Encode Username and Password
+https://passwords-generator.org/base64-encode
+
+![image](https://github.com/user-attachments/assets/3610e5e5-6ae6-4e91-b515-d77b9e24ce93)
+
+
 
