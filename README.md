@@ -41,9 +41,10 @@ Before deploying it to any production environment, make sure to test and validat
 * ***check_gg_processes.py*** is a script to check the HUB process status with custom output
 
 ## Encode Username and Password
-https://passwords-generator.org/base64-encode
+* https://passwords-generator.org/base64-encode
 
-![image](https://github.com/user-attachments/assets/3610e5e5-6ae6-4e91-b515-d77b9e24ce93)
+![image](https://github.com/user-attachments/assets/56ba8445-88a3-4c05-97f4-be905a5d4bf7)
+
 
 
 
