@@ -5,9 +5,7 @@ It provides a way to interact with GoldenGate's Microservices Architecture, givi
 
 ### Key features and capabilities of the REST API include:
 
-* Deployment Management: Create, update, and delete Oracle GoldenGate Distribution Paths, which define the flow of data replication.
-* Monitoring: Retrieve statistics, information, and checkpoints related to distribution paths, processes, trails, and other components.
-* Administration: Manage the status of distribution paths, control replication processes, and configure various settings.
+* TBD
 
 ## Where to find more information:
 
