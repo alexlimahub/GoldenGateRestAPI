@@ -11,10 +11,11 @@ The Oracle GoldenGate REST API provides comprehensive remote control over your G
 ## Where to find more information:
 
 ### Oracle GoldenGate Microservices Architecture REST API Documentation:
-* Version 23ai: https://docs.oracle.com/en/middleware/goldengate/core/23/oggra/ \
-* Version 21.3: https://docs.oracle.com/en/middleware/goldengate/core/21.3/oggra/ \
-* Version 19.1: https://docs.oracle.com/en/middleware/goldengate/core/19.1/oggra/ \
-* Blog Post: "See How Easily You Can Use Oracle GoldenGate Rest API": https://blogs.oracle.com/dataintegration/post/see-how-easily-you-can-use-oracle-goldengate-rest-api
+* Version 23ai: https://docs.oracle.com/en/middleware/goldengate/core/23/oggra/ 
+* Version 21.3: https://docs.oracle.com/en/middleware/goldengate/core/21.3/oggra/ 
+* Version 19.1: https://docs.oracle.com/en/middleware/goldengate/core/19.1/oggra/ 
+* Blog Post: "See How Easily You Can Use Oracle GoldenGate Rest API":
+  https://blogs.oracle.com/dataintegration/post/see-how-easily-you-can-use-oracle-goldengate-rest-api
 
 ## Disclaimer 
 These examples are for educational purposes. \
