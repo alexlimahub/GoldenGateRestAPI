@@ -18,7 +18,7 @@ The Oracle GoldenGate REST API provides comprehensive remote control over your G
   https://blogs.oracle.com/dataintegration/post/see-how-easily-you-can-use-oracle-goldengate-rest-api
 
 ## Disclaimer 
-These examples are for educational purposes. \
+These examples are for **educational purposes**. \
 They are not intended for production deployments and are not supported by Oracle or myself.  \
 Before deploying it to any production environment, make sure to test and validate it thoroughly in your environment.
 
