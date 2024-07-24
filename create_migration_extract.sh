@@ -4,11 +4,11 @@
 #-- ADD EXTRACT
 curl -s -K /Users/alexlima/Documents/LABS/access.cfg \
 -H "Accept: application/json" \
--X POST https://<IP or hostname>/services/v2/extracts/EDEMO \
+-X POST https://<IP or hostname>/services/v2/extracts/<Extract Name> \
 -d '{
 "description":"Create Extract Demo",
 "config":[
-"EXTRACT EDEMO",
+"EXTRACT <Extract Name>",
 "EXTTRAIL e1",
 "USERIDALIAS cdbdsrc DOMAIN OracleGoldenGate",
 "-- Integrated extract parameters",
