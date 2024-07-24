@@ -1,5 +1,5 @@
-# GoldenGateRestAPI
-Examples of RestAPI for GoldenGate
+# GoldenGate RestAPI
+Examples of RestAPI for Oracle GoldenGate
 
 ## Disclaimer 
 These examples are for educational purposes. \
