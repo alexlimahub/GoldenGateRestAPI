@@ -1,9 +1,9 @@
 # GoldenGateRestAPI
 Examples of RestAPI for GoldenGate
 
-1- Create Extract
-2- Delete Extract
-3- Info Checkpoint
+* Create Extract
+* Delete Extract
+* Info Checkpoint
 4- Purge Trails
 5- Lag Checks
 6- Info Checks
