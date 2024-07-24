@@ -9,6 +9,6 @@ Examples of RestAPI for GoldenGate
 * Info Checks
 * Create Replicat
 * Delete Replicat
-* create_replication.sh is a complete bi-direction configuration
+* create_replication.sh script is a complete bi-direction configuration with output from terraform 
 * Check for long Transactions
 
