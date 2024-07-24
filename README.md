@@ -5,7 +5,7 @@ It provides a way to interact with GoldenGate's Microservices Architecture, givi
 
 ### Key features and capabilities of the REST API include:
 
-* TBD
+* The Oracle GoldenGate REST API provides comprehensive remote control over your GoldenGate environment. It allows you to create, manage, and monitor replication processes, fine-tune parameters, and access real-time performance metrics. Additionally, it enables security configuration, automated actions (my favorite part), and seamless integration with other systems. This API serves as a powerful tool for centrally managing and optimizing data replication processes with Oracle GoldenGate.
 
 ## Where to find more information:
 
