@@ -1,6 +1,7 @@
 # GoldenGate RestAPI
 Examples of RestAPI for Oracle GoldenGate \
-The Oracle GoldenGate REST API is a set of web services that enable you to manage and monitor Oracle GoldenGate deployments and replication processes programmatically. \
+
+The Oracle GoldenGate REST API is a set of web services that enable you to manage and monitor Oracle GoldenGate deployments and replication processes programmatically.
 It provides a way to interact with GoldenGate's Microservices Architecture, giving you control over various aspects of data replication and integration.
 
 ### Key features and capabilities of the REST API include:
