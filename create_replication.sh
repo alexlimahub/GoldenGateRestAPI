@@ -1,7 +1,17 @@
 #!/bin/bash
 #
+#############################################################################################
+# GoldenGate Bi-Direction Replication Setup and Configuration (No Initial Load)
+#
+# Author: Alex Lima
+# 
+# Execution: ./create_replication.sh
+#
+# Config: Modify IPs, username and password to your environment settings
+#
+############################################################################################
 
-## Extract the Database and GoldenGate IPs and Passwords fro the Terraform Output
+## Extract the Database and GoldenGate IPs and Passwords from the Terraform Output
 OGG_EAST_PUBLIC_IP="$(terraform output -raw ogg-east-public_ip)"
 OGG_EAST_PRIVATE_IP="$(terraform output -raw ogg-east-private_ip)"
 OGG_WEST_PUBLIC_IP="$(terraform output -raw ogg-west-public_ip)"
@@ -12,6 +22,8 @@ DB_WEST_PUBLIC_IP="$(terraform output -raw db-west-public_ip)"
 DB_WEST_PRIVATE_IP="$(terraform output -raw db-west-private_ip)"
 GLOBAL_PASS="$(terraform output -raw global_password)"
 GLOBAL_USER="$(terraform output -raw global_ogg_user)"
+
+############################################################################################
 
 ## Setup
 conn_propeties=("WEST:$DB_WEST_PUBLIC_IP:$OGG_WEST_PUBLIC_IP" "EAST:$DB_EAST_PRIVATE_IP:$OGG_EAST_PUBLIC_IP")
