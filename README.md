@@ -5,20 +5,20 @@ It provides a way to interact with GoldenGate's Microservices Architecture, givi
 
 ### Key features and capabilities of the REST API include:
 
-* The Oracle GoldenGate REST API provides comprehensive remote control over your GoldenGate environment. It allows you to create, manage, and monitor replication processes, fine-tune parameters, and access real-time performance metrics. Additionally, it enables security configuration, automated actions (my favorite part), and seamless integration with other systems. This API serves as a powerful tool for centrally managing and optimizing data replication processes with Oracle GoldenGate.
+The Oracle GoldenGate REST API provides comprehensive remote control over your GoldenGate environment. It allows you to create, manage, and monitor replication processes, fine-tune parameters, and access real-time performance metrics. Additionally, it enables security configuration, automated actions (my favorite part), and seamless integration with other systems. This API serves as a powerful tool for centrally managing and optimizing data replication processes with Oracle GoldenGate.
 
 ## Where to find more information:
 
 ### Oracle GoldenGate Microservices Architecture REST API Documentation:
-Version 23ai: https://docs.oracle.com/en/middleware/goldengate/core/23/oggra/ \
-Version 21.3: https://docs.oracle.com/en/middleware/goldengate/core/21.3/oggra/ \
-Version 19.1: https://docs.oracle.com/en/middleware/goldengate/core/19.1/oggra/ \
-Blog Post: "See How Easily You Can Use Oracle GoldenGate Rest API": https://blogs.oracle.com/dataintegration/post/see-how-easily-you-can-use-oracle-goldengate-rest-api
+* Version 23ai: https://docs.oracle.com/en/middleware/goldengate/core/23/oggra/ \
+* Version 21.3: https://docs.oracle.com/en/middleware/goldengate/core/21.3/oggra/ \
+* Version 19.1: https://docs.oracle.com/en/middleware/goldengate/core/19.1/oggra/ \
+* Blog Post: "See How Easily You Can Use Oracle GoldenGate Rest API": https://blogs.oracle.com/dataintegration/post/see-how-easily-you-can-use-oracle-goldengate-rest-api
 
 ## Disclaimer 
 These examples are for educational purposes. \
 They are not intended for production deployments and are not supported by Oracle or myself.  \
-Before deploying it to any production environment, make sure to thoroughly test and validate it in your environment.
+Before deploying it to any production environment, make sure to test and validate it thoroughly in your environment.
 
 ## Generic Scripts
 * Create Extract
