@@ -36,8 +36,8 @@ Before deploying it to any production environment, make sure to test and validat
 * Modify Session Timeout
 
 ## Custom Scripts
-* ***create_replication.sh*+* script is a complete bi-direction configuration with output from terraform (Shell Script)
-* **OpenTransaction.py** and **check_gg_longtransations.sh** are scripts to check if there is an open transaction in the database (Python)
-* **check_gg_processes.py** is a script to check the HUB process status with custom output
+* ***create_replication.sh*** script is a complete bi-direction configuration with output from terraform (Shell Script)
+* ***OpenTransaction.py*** and ***check_gg_longtransations.sh*** are scripts to check if there is an open transaction in the database (Python)
+* ***check_gg_processes.py*** is a script to check the HUB process status with custom output
 
 
