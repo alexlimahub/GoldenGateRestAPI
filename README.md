@@ -20,7 +20,7 @@ Before deploying it to any production environment, make sure to thoroughly test 
 
 ## Custom Scripts
 * create_replication.sh script is a complete bi-direction configuration with output from terraform (Shell Script)
-* OpenTransaction.py and check_gg_longtransations.ph are script to check if there is an open transaction in the database (Python)
+* OpenTransaction.py and check_gg_longtransations.ph are scripts to check if there is an open transaction in the database (Python)
 * check_gg_processes.py is a script to check the HUB process status with custom output
 
 
