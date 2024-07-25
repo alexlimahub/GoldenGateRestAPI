@@ -1,11 +1,9 @@
 #############################################################################################
-# GoldenGate HUB Check Extract and Replicats
+# GoldenGate HUB Check Long Transactions
 #
 # Author: Alex Lima
 # 
-# Execution: $python3 check_gg_processes.py
-#
-# Config: Set GoldenGate HUR URL, PORT and Authentication:  goldengate_hub_url and header
+# Execution: $python3 check_gg_longtransactions.py
 #
 ############################################################################################
 
@@ -20,10 +18,10 @@ os.system('clear')
 requests.packages.urllib3.disable_warnings()
 
 # Url and PORT for GOldengate HUB
-goldengate_hub_url="https://150.230.169.166"
+goldengate_hub_url="https://<ip or hostname>"
 
 # Authentication
-header = {"Authorization" : "Basic b2dnYWRtaW46eTR2RkdoV242SUNTLXNxZA=="}
+header = {"Authorization" : "Basic <Encoded username:password>"}
 ##---
 
 # DIsplay the Header content
