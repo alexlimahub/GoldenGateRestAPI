@@ -5,8 +5,6 @@
 #
 # Execution: $python3 OpenTransaction.py
 #
-# Config: Set GoldenGate HUR URL, PORT and Authentication:  goldengate_hub_url and header
-#
 ############################################################################################
 
 import requests
