@@ -1,0 +1,120 @@
+# This Docker Compose file is for education purpose only and it contains all necessary components 
+# to instantiate one Oracle GoldenGate 23 instance and two Oracle Database 23 Free instances
+
+# This yaml file will create 3 docker containers:
+#   1- One Oracle Goldengate 23 Hub
+#   2- One Oracle Database 23  (Named: West)
+#   3- One Oracle Database 23  (Named: East) 
+
+# To connect to goldengate and databases you can go to:
+#  GG Microservices: https://localhost:9090  [ user: oggadmin, password: Welcome##123 ]
+#  GG Microservices: https://localhost:8080  [ user: oggadmin, password: Welcome##123 ]
+#
+#  Database Service West for SQL Developer: localhost:1534/FREEPDB1  [ sys password: Welcome##123 ]
+#  Database Service East for SQL Developer: localhost:1535/FREEPDB1  [ sys password: Welcome##123 ]
+#
+#  Internal ports all all the same: 1521
+#  Database Service West for GoldenGate: 172.52.0.103:1521/FREEPDB1  [ oggadmin password: Welcome##123 ]
+#  Database Service East for GoldenGate: 172.52.0.104:1521/FREEPDB1  [ oggadmin password: Welcome##123 ]
+
+# Sample HR schema is installed on both databases
+
+#version: '3.8'
+services:
+# Create GoldenGate HUB Instance
+  ggw:
+    container_name: ogg238W
+    hostname: ogg238W
+    image:  iad.ocir.io/paasdevgg/alima-ocr/goldengate:23.8
+    ports:
+      - "9090:443"
+      - "9091:9012"
+    deploy:
+      resources:
+          limits:
+            cpus: '4.0'
+            memory: 8192M
+          reservations:
+            cpus: '4.0'
+            memory: 8192M
+    env_file:
+      - .env
+    environment:
+      - OGG_DEPLOYMENT=WEST    
+    networks:
+      ogg_docker_network_238:
+        ipv4_address: ${DOCKER_OGG_WEST_IP}
+    volumes:
+      - ${PWD}/cert:/etc/nginx/cert:rw
+    platform: "linux/x86_64"
+
+  gge:
+    container_name: ogg238E
+    hostname: ogg238E
+    image:  iad.ocir.io/paasdevgg/alima-ocr/goldengate:23.8
+    ports:
+      - "8080:443"
+      - "8081:9012"
+    deploy:
+      resources:
+          limits:
+            cpus: '4.0'
+            memory: 8192M
+          reservations:
+            cpus: '4.0'
+            memory: 8192M
+    env_file:
+      - .env
+    environment:
+      - OGG_DEPLOYMENT=EAST  
+    networks:
+      ogg_docker_network_238:
+        ipv4_address: ${DOCKER_OGG_EAST_IP}
+    volumes:
+      - ${PWD}/cert:/etc/nginx/cert:rw
+    platform: "linux/x86_64"
+
+# Create WEST Side Database 23.8 Free
+  databaseW:
+    container_name: db238W
+    hostname: db238W
+    #image: alexlima/oracle-free:23.3-slim-ogg
+    image: alexlima/db_free_slim_ogg:latest
+    ports:
+      - "1534:1521"
+    env_file:
+      - .env
+    restart: unless-stopped
+    networks:
+      ogg_docker_network_238:
+        ipv4_address: ${DOCKER_DB_WEST_IP}
+    platform: "linux/arm64"
+
+
+# Create EAST Side Database 23.8 Free
+  databaseE:
+    container_name: db238E
+    hostname: db238E
+    #image: alexlima/oracle-free:23.3-slim-ogg
+    image: alexlima/db_free_slim_ogg:latest
+    ports:
+      - "1535:1521"
+    env_file:
+      - .env
+    restart: unless-stopped
+    networks:
+      ogg_docker_network_238:
+        ipv4_address: ${DOCKER_DB_EAST_IP}
+    platform: "linux/arm64"
+    
+networks:
+  ogg_docker_network_238:
+    driver: bridge
+    ipam:
+      config:
+      - subnet: 172.52.0.0/16
+
+# volumes:
+#   grafana_data: {}
+#   influxdb_data: {}
+
