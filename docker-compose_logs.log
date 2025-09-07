@@ -1,0 +1,937 @@
+alexlima@Alexs-MacBook-Pro compose238aiGG % docker compose down
+[+] Running 5/5
+ ✔ Container db238W                               Removed                                                                                        0.2s 
+ ✔ Container ogg238W                              Removed                                                                                        0.0s 
+ ✔ Container db238E                               Removed                                                                                        0.2s 
+ ✔ Container ogg238E                              Removed                                                                                        0.0s 
+ ✔ Network compose238aigg_ogg_docker_network_238  Removed                                                                                        0.8s 
+alexlima@Alexs-MacBook-Pro compose238aiGG % docker compose up -d  
+[+] Running 5/5
+ ✔ Network compose238aigg_ogg_docker_network_238  Created                                                                                        0.2s 
+ ✔ Container ogg238W                              Started                                                                                        0.7s 
+ ✔ Container ogg238E                              Started                                                                                        0.7s 
+ ✔ Container db238W                               Started                                                                                        0.7s 
+ ✔ Container db238E                               Started                                                                                        0.5s 
+alexlima@Alexs-MacBook-Pro compose238aiGG % docker compose logs 
+ogg238E  | 2025-09-07T17:25:20.570Z | INFO    | -------------------------------------------------------
+ogg238E  | 2025-09-07T17:25:20.586Z | INFO    | Copyright (c) 2014, 2024, Oracle and/or its affiliates.
+ogg238E  | 2025-09-07T17:25:20.588Z | INFO    | All rights reserved.
+ogg238E  | 2025-09-07T17:25:20.589Z | INFO    | 
+ogg238E  | 2025-09-07T17:25:20.590Z | INFO    | Create deployment started on 09-07-2025 17:25:20
+ogg238E  | 2025-09-07T17:25:20.592Z | INFO    | JRE: 17.0.15
+ogg238E  | 2025-09-07T17:25:20.593Z | INFO    | -------------------------------------------------------
+ogg238E  | Password: 
+ogg238E  | 2025-09-07T17:25:20.633Z | INFO    | Using hostname: 127.0.0.1
+db238W   | 
+ogg238E  | 2025-09-07T17:25:20.635Z | INFO    | Using default port for adminsrvr: 9001
+db238W   | LSNRCTL for Linux: Version 23.0.0.0.0 - Production on 07-SEP-2025 17:25:16
+ogg238E  | 2025-09-07T17:25:20.638Z | INFO    | Using default port for distsrvr: 9002
+db238W   | 
+ogg238E  | 2025-09-07T17:25:20.639Z | INFO    | Using default port for rcvrsrvr: 9003
+db238W   | Copyright (c) 1991, 2024, Oracle.  All rights reserved.
+ogg238E  | 2025-09-07T17:25:20.639Z | INFO    | Using default TCP port for pmsrvr: 9004
+ogg238E  | 2025-09-07T17:25:20.641Z | INFO    | Using default UDP port for pmsrvr: 9005
+db238W   | 
+db238W   | Starting /opt/oracle/product/23ai/dbhomeFree/bin/tnslsnr: please wait...
+ogg238E  | 2025-09-07T17:25:20.641Z | INFO    | Using default DataStore type 'BDB' for pmsrvr
+ogg238E  | 2025-09-07T17:25:20.652Z | INFO    | Command: /u01/ogg/bin/ServiceManager --prop /config/network/serviceListeningPort/port --value 9011
+ogg238E  | 2025-09-07T17:25:20.655Z | INFO    | Setting child process environment variable OGG_VAR_HOME to /u02/ServiceManager/var
+ogg238E  | 2025-09-07T17:25:20.657Z | INFO    | Setting child process environment variable OGG_SSL_HOME to /u02/ServiceManager/etc/ssl
+ogg238E  | 2025-09-07T17:25:20.659Z | INFO    | Setting child process environment variable OGG_ETC_HOME to /u02/ServiceManager/etc
+ogg238E  | 2025-09-07T17:25:20.945Z | INFO    | Verifying initial configuration only has the Service Manager deployment.
+ogg238E  | 2025-09-07T17:25:20.946Z | INFO    | Connecting to http://127.0.0.1:9011 to issue a (GET) request for '/services/v2/deployments'
+ogg238E  | 2025-09-07T17:25:24.238Z | INFO    | Return code: 200 (OK).
+ogg238E  | 2025-09-07T17:25:24.257Z | INFO    | Verifying initial configuration only has the Service Manager service.
+db238E   | 
+ogg238E  | 2025-09-07T17:25:24.260Z | INFO    | Connecting to http://127.0.0.1:9011 to issue a (GET) request for '/services/v2/deployments/ServiceManager/services'
+db238W   | 
+db238E   | LSNRCTL for Linux: Version 23.0.0.0.0 - Production on 07-SEP-2025 17:25:15
+db238W   | TNSLSNR for Linux: Version 23.0.0.0.0 - Production
+db238W   | System parameter file is /opt/oracle/product/23ai/dbhomeFree/network/admin/listener.ora
+db238W   | Log messages written to /opt/oracle/diag/tnslsnr/db238W/listener/alert/log.xml
+db238E   | 
+db238W   | Listening on: (DESCRIPTION=(ADDRESS=(PROTOCOL=ipc)(KEY=EXTPROC_FOR_FREE)))
+db238E   | Copyright (c) 1991, 2024, Oracle.  All rights reserved.
+db238E   | 
+db238E   | Starting /opt/oracle/product/23ai/dbhomeFree/bin/tnslsnr: please wait...
+db238E   | 
+db238W   | Listening on: (DESCRIPTION=(ADDRESS=(PROTOCOL=tcp)(HOST=0.0.0.0)(PORT=1521)))
+db238W   | 
+db238W   | Connecting to (DESCRIPTION=(ADDRESS=(PROTOCOL=IPC)(KEY=EXTPROC_FOR_FREE)))
+db238W   | STATUS of the LISTENER
+db238W   | ------------------------
+db238W   | Alias                     LISTENER
+db238E   | TNSLSNR for Linux: Version 23.0.0.0.0 - Production
+db238E   | System parameter file is /opt/oracle/product/23ai/dbhomeFree/network/admin/listener.ora
+db238E   | Log messages written to /opt/oracle/diag/tnslsnr/db238E/listener/alert/log.xml
+db238E   | Listening on: (DESCRIPTION=(ADDRESS=(PROTOCOL=ipc)(KEY=EXTPROC_FOR_FREE)))
+db238E   | Listening on: (DESCRIPTION=(ADDRESS=(PROTOCOL=tcp)(HOST=0.0.0.0)(PORT=1521)))
+db238E   | 
+db238E   | Connecting to (DESCRIPTION=(ADDRESS=(PROTOCOL=IPC)(KEY=EXTPROC_FOR_FREE)))
+db238E   | STATUS of the LISTENER
+db238W   | Version                   TNSLSNR for Linux: Version 23.0.0.0.0 - Production
+db238E   | ------------------------
+db238E   | Alias                     LISTENER
+db238W   | Start Date                07-SEP-2025 17:25:16
+db238W   | Uptime                    0 days 0 hr. 0 min. 0 sec
+db238W   | Trace Level               off
+db238W   | Security                  ON: Local OS Authentication
+db238E   | Version                   TNSLSNR for Linux: Version 23.0.0.0.0 - Production
+db238E   | Start Date                07-SEP-2025 17:25:16
+db238E   | Uptime                    0 days 0 hr. 0 min. 0 sec
+db238E   | Trace Level               off
+db238E   | Security                  ON: Local OS Authentication
+db238E   | SNMP                      OFF
+db238E   | Default Service           FREE
+db238E   | Listener Parameter File   /opt/oracle/product/23ai/dbhomeFree/network/admin/listener.ora
+db238E   | Listener Log File         /opt/oracle/diag/tnslsnr/db238E/listener/alert/log.xml
+db238E   | Listening Endpoints Summary...
+db238E   |   (DESCRIPTION=(ADDRESS=(PROTOCOL=ipc)(KEY=EXTPROC_FOR_FREE)))
+db238E   |   (DESCRIPTION=(ADDRESS=(PROTOCOL=tcp)(HOST=0.0.0.0)(PORT=1521)))
+db238E   | The listener supports no services
+db238E   | The command completed successfully
+db238E   | ORACLE instance started.
+db238E   | 
+db238E   | Total System Global Area 1603787632 bytes
+db238E   | Fixed Size               5421936 bytes
+db238E   | Variable Size                  838860800 bytes
+db238E   | Database Buffers       754974720 bytes
+db238E   | Redo Buffers             4530176 bytes
+db238W   | SNMP                      OFF
+db238W   | Default Service           FREE
+db238W   | Listener Parameter File   /opt/oracle/product/23ai/dbhomeFree/network/admin/listener.ora
+db238W   | Listener Log File         /opt/oracle/diag/tnslsnr/db238W/listener/alert/log.xml
+db238W   | Listening Endpoints Summary...
+db238W   |   (DESCRIPTION=(ADDRESS=(PROTOCOL=ipc)(KEY=EXTPROC_FOR_FREE)))
+db238W   |   (DESCRIPTION=(ADDRESS=(PROTOCOL=tcp)(HOST=0.0.0.0)(PORT=1521)))
+db238W   | The listener supports no services
+db238W   | The command completed successfully
+db238W   | ORACLE instance started.
+db238W   | 
+db238W   | Total System Global Area 1603787632 bytes
+db238W   | Fixed Size               5421936 bytes
+db238W   | Variable Size                  838860800 bytes
+db238W   | Database Buffers       754974720 bytes
+db238W   | Redo Buffers             4530176 bytes
+db238W   | Database mounted.
+db238E   | Database mounted.
+ogg238W  | 2025-09-07T17:25:20.562Z | INFO    | -------------------------------------------------------
+ogg238W  | 2025-09-07T17:25:20.577Z | INFO    | Copyright (c) 2014, 2024, Oracle and/or its affiliates.
+ogg238W  | 2025-09-07T17:25:20.578Z | INFO    | All rights reserved.
+ogg238W  | 2025-09-07T17:25:20.579Z | INFO    | 
+ogg238W  | 2025-09-07T17:25:20.580Z | INFO    | Create deployment started on 09-07-2025 17:25:20
+ogg238W  | 2025-09-07T17:25:20.580Z | INFO    | JRE: 17.0.15
+ogg238W  | 2025-09-07T17:25:20.585Z | INFO    | -------------------------------------------------------
+ogg238W  | Password: 
+ogg238W  | 2025-09-07T17:25:20.616Z | INFO    | Using hostname: 127.0.0.1
+ogg238W  | 2025-09-07T17:25:20.617Z | INFO    | Using default port for adminsrvr: 9001
+ogg238W  | 2025-09-07T17:25:20.618Z | INFO    | Using default port for distsrvr: 9002
+ogg238W  | 2025-09-07T17:25:20.619Z | INFO    | Using default port for rcvrsrvr: 9003
+ogg238W  | 2025-09-07T17:25:20.620Z | INFO    | Using default TCP port for pmsrvr: 9004
+ogg238W  | 2025-09-07T17:25:20.620Z | INFO    | Using default UDP port for pmsrvr: 9005
+ogg238W  | 2025-09-07T17:25:20.621Z | INFO    | Using default DataStore type 'BDB' for pmsrvr
+ogg238W  | 2025-09-07T17:25:20.634Z | INFO    | Command: /u01/ogg/bin/ServiceManager --prop /config/network/serviceListeningPort/port --value 9011
+ogg238W  | 2025-09-07T17:25:20.637Z | INFO    | Setting child process environment variable OGG_VAR_HOME to /u02/ServiceManager/var
+ogg238W  | 2025-09-07T17:25:20.639Z | INFO    | Setting child process environment variable OGG_SSL_HOME to /u02/ServiceManager/etc/ssl
+ogg238W  | 2025-09-07T17:25:20.640Z | INFO    | Setting child process environment variable OGG_ETC_HOME to /u02/ServiceManager/etc
+ogg238W  | 2025-09-07T17:25:20.961Z | INFO    | Verifying initial configuration only has the Service Manager deployment.
+ogg238W  | 2025-09-07T17:25:20.964Z | INFO    | Connecting to http://127.0.0.1:9011 to issue a (GET) request for '/services/v2/deployments'
+ogg238W  | 2025-09-07T17:25:24.249Z | INFO    | Return code: 200 (OK).
+ogg238W  | 2025-09-07T17:25:24.264Z | INFO    | Verifying initial configuration only has the Service Manager service.
+ogg238W  | 2025-09-07T17:25:24.276Z | INFO    | Connecting to http://127.0.0.1:9011 to issue a (GET) request for '/services/v2/deployments/ServiceManager/services'
+alexlima@Alexs-MacBook-Pro compose238aiGG % docker compose logs -f
+db238W   | 
+db238W   | LSNRCTL for Linux: Version 23.0.0.0.0 - Production on 07-SEP-2025 17:25:16
+db238W   | 
+db238W   | Copyright (c) 1991, 2024, Oracle.  All rights reserved.
+db238W   | 
+db238W   | Starting /opt/oracle/product/23ai/dbhomeFree/bin/tnslsnr: please wait...
+db238W   | 
+db238W   | TNSLSNR for Linux: Version 23.0.0.0.0 - Production
+db238W   | System parameter file is /opt/oracle/product/23ai/dbhomeFree/network/admin/listener.ora
+db238W   | Log messages written to /opt/oracle/diag/tnslsnr/db238W/listener/alert/log.xml
+db238W   | Listening on: (DESCRIPTION=(ADDRESS=(PROTOCOL=ipc)(KEY=EXTPROC_FOR_FREE)))
+db238W   | Listening on: (DESCRIPTION=(ADDRESS=(PROTOCOL=tcp)(HOST=0.0.0.0)(PORT=1521)))
+db238W   | 
+db238W   | Connecting to (DESCRIPTION=(ADDRESS=(PROTOCOL=IPC)(KEY=EXTPROC_FOR_FREE)))
+db238W   | STATUS of the LISTENER
+db238W   | ------------------------
+db238W   | Alias                     LISTENER
+db238W   | Version                   TNSLSNR for Linux: Version 23.0.0.0.0 - Production
+db238W   | Start Date                07-SEP-2025 17:25:16
+db238W   | Uptime                    0 days 0 hr. 0 min. 0 sec
+db238W   | Trace Level               off
+ogg238E  | 2025-09-07T17:25:20.570Z | INFO    | -------------------------------------------------------
+ogg238E  | 2025-09-07T17:25:20.586Z | INFO    | Copyright (c) 2014, 2024, Oracle and/or its affiliates.
+ogg238E  | 2025-09-07T17:25:20.588Z | INFO    | All rights reserved.
+ogg238E  | 2025-09-07T17:25:20.589Z | INFO    | 
+ogg238E  | 2025-09-07T17:25:20.590Z | INFO    | Create deployment started on 09-07-2025 17:25:20
+ogg238E  | 2025-09-07T17:25:20.592Z | INFO    | JRE: 17.0.15
+ogg238E  | 2025-09-07T17:25:20.593Z | INFO    | -------------------------------------------------------
+ogg238E  | Password: 
+ogg238E  | 2025-09-07T17:25:20.633Z | INFO    | Using hostname: 127.0.0.1
+ogg238E  | 2025-09-07T17:25:20.635Z | INFO    | Using default port for adminsrvr: 9001
+ogg238E  | 2025-09-07T17:25:20.638Z | INFO    | Using default port for distsrvr: 9002
+ogg238E  | 2025-09-07T17:25:20.639Z | INFO    | Using default port for rcvrsrvr: 9003
+ogg238E  | 2025-09-07T17:25:20.639Z | INFO    | Using default TCP port for pmsrvr: 9004
+ogg238E  | 2025-09-07T17:25:20.641Z | INFO    | Using default UDP port for pmsrvr: 9005
+ogg238E  | 2025-09-07T17:25:20.641Z | INFO    | Using default DataStore type 'BDB' for pmsrvr
+ogg238E  | 2025-09-07T17:25:20.652Z | INFO    | Command: /u01/ogg/bin/ServiceManager --prop /config/network/serviceListeningPort/port --value 9011
+ogg238E  | 2025-09-07T17:25:20.655Z | INFO    | Setting child process environment variable OGG_VAR_HOME to /u02/ServiceManager/var
+ogg238E  | 2025-09-07T17:25:20.657Z | INFO    | Setting child process environment variable OGG_SSL_HOME to /u02/ServiceManager/etc/ssl
+ogg238E  | 2025-09-07T17:25:20.659Z | INFO    | Setting child process environment variable OGG_ETC_HOME to /u02/ServiceManager/etc
+ogg238E  | 2025-09-07T17:25:20.945Z | INFO    | Verifying initial configuration only has the Service Manager deployment.
+ogg238E  | 2025-09-07T17:25:20.946Z | INFO    | Connecting to http://127.0.0.1:9011 to issue a (GET) request for '/services/v2/deployments'
+ogg238E  | 2025-09-07T17:25:24.238Z | INFO    | Return code: 200 (OK).
+ogg238E  | 2025-09-07T17:25:24.257Z | INFO    | Verifying initial configuration only has the Service Manager service.
+ogg238E  | 2025-09-07T17:25:24.260Z | INFO    | Connecting to http://127.0.0.1:9011 to issue a (GET) request for '/services/v2/deployments/ServiceManager/services'
+ogg238E  | 2025-09-07T17:25:24.366Z | INFO    | Return code: 200 (OK).
+ogg238E  | 2025-09-07T17:25:24.382Z | INFO    | Verifying initial Service Manager listening address.
+ogg238E  | 2025-09-07T17:25:24.396Z | INFO    | Connecting to http://127.0.0.1:9011 to issue a (GET) request for '/services/v2/deployments/ServiceManager/services/ServiceManager'
+ogg238E  | 2025-09-07T17:25:24.516Z | INFO    | Return code: 200 (OK).
+ogg238E  | 2025-09-07T17:25:24.520Z | INFO    | Verifying Service Manager security configuration.
+ogg238E  | 2025-09-07T17:25:24.521Z | INFO    | Connecting to http://127.0.0.1:9011 to issue a (GET) request for '/services/v2/deployments/ServiceManager/services/ServiceManager'
+ogg238E  | 2025-09-07T17:25:24.707Z | INFO    | Return code: 200 (OK).
+ogg238E  | 2025-09-07T17:25:24.719Z | INFO    | Verifying the Certificate Store exists.
+ogg238E  | 2025-09-07T17:25:24.722Z | INFO    | Connecting to http://127.0.0.1:9011 to issue a (GET) request for '/services/v2/deployments/ServiceManager/certificates'
+ogg238E  | 2025-09-07T17:25:24.878Z | INFO    | Return code: 200 (OK).
+ogg238E  | 2025-09-07T17:25:24.886Z | INFO    | Verifying Certificate Store initially doesn't have any client certificates.
+ogg238E  | 2025-09-07T17:25:24.891Z | INFO    | Connecting to http://127.0.0.1:9011 to issue a (GET) request for '/services/v2/deployments/ServiceManager/certificates/client'
+ogg238E  | 2025-09-07T17:25:25.003Z | INFO    | Return code: 200 (OK).
+ogg238E  | 2025-09-07T17:25:25.005Z | INFO    | Verifying Certificate Store initially doesn't have any server certificates.
+ogg238E  | 2025-09-07T17:25:25.006Z | INFO    | Connecting to http://127.0.0.1:9011 to issue a (GET) request for '/services/v2/deployments/ServiceManager/certificates/server'
+ogg238E  | 2025-09-07T17:25:25.093Z | INFO    | Return code: 200 (OK).
+ogg238E  | 2025-09-07T17:25:25.096Z | INFO    | Verifying Certificate Store initially doesn't have any Trust Store certificates.
+ogg238E  | 2025-09-07T17:25:25.096Z | INFO    | Connecting to http://127.0.0.1:9011 to issue a (GET) request for '/services/v2/deployments/ServiceManager/certificates/truststore'
+ogg238E  | 2025-09-07T17:25:25.155Z | INFO    | Return code: 200 (OK).
+ogg238E  | 2025-09-07T17:25:25.163Z | INFO    | Verifying Service Manager initial authorizations.
+ogg238E  | 2025-09-07T17:25:25.167Z | INFO    | Connecting to http://127.0.0.1:9011 to issue a (GET) request for '/services/v2/authorizations/All'
+ogg238E  | 2025-09-07T17:25:25.317Z | INFO    | Return code: 200 (OK).
+ogg238E  | 2025-09-07T17:25:25.375Z | INFO    | Getting the time that the Service Manager first started
+ogg238E  | 2025-09-07T17:25:25.377Z | INFO    | Connecting to http://127.0.0.1:9011 to issue a (GET) request for '/services/v2/config/summary'
+ogg238E  | 2025-09-07T17:25:25.491Z | INFO    | Return code: 200 (OK).
+ogg238E  | 2025-09-07T17:25:25.500Z | INFO    | Updating the password policy configuration in the Service Manager deployment.
+ogg238E  | 2025-09-07T17:25:25.501Z | INFO    | Connecting to http://127.0.0.1:9011 to issue a (PATCH) request for '/services/v2/deployments/ServiceManager'
+ogg238E  | 2025-09-07T17:25:25.561Z | INFO    | Return code: 200 (OK).
+ogg238E  | 2025-09-07T17:25:25.565Z | INFO    | Configuring FIPS in Service Manager.
+ogg238E  | 2025-09-07T17:25:25.568Z | INFO    | Connecting to http://127.0.0.1:9011 to issue a (PATCH) request for '/services/v2/deployments/ServiceManager/services/ServiceManager'
+ogg238E  | 2025-09-07T17:25:25.574Z | INFO    | Configuring FIPS in Service Manager.
+ogg238E  | 2025-09-07T17:25:25.577Z | INFO    | Connecting to http://127.0.0.1:9011 to issue a (GET) request for '/services/v2/deployments/ServiceManager/services/ServiceManager'
+ogg238E  | 2025-09-07T17:25:25.669Z | INFO    | Return code: 200 (OK).
+ogg238E  | 2025-09-07T17:25:25.815Z | INFO    | Return code: 200 (OK).
+ogg238E  | 2025-09-07T17:25:25.817Z | INFO    | Waiting for the Service Manager to finish restarting after updating FIPS configuration.
+ogg238E  | 2025-09-07T17:25:25.818Z | INFO    | Connecting to http://127.0.0.1:9011 to issue a (GET) request for '/services/v2/config/summary'
+ogg238E  | 2025-09-07T17:25:25.886Z | INFO    | Response from server: 
+ogg238E  | 2025-09-07T17:25:25.889Z | INFO    |   OGG-12043: The service is restarting, and the request cannot be processed.
+ogg238E  | 2025-09-07T17:25:25.889Z | INFO    | Waiting for the service to be available to verify REST call to '/services/v2/config/summary'.
+ogg238E  | 2025-09-07T17:25:26.102Z | INFO    | Response from server: 
+ogg238E  | 2025-09-07T17:25:26.103Z | INFO    |   OGG-12043: The service is restarting, and the request cannot be processed.
+ogg238E  | 2025-09-07T17:25:26.104Z | INFO    | Waiting for the service to be available to verify REST call to '/services/v2/config/summary'.
+db238E   | 
+db238E   | LSNRCTL for Linux: Version 23.0.0.0.0 - Production on 07-SEP-2025 17:25:15
+db238E   | 
+db238E   | Copyright (c) 1991, 2024, Oracle.  All rights reserved.
+db238E   | 
+db238E   | Starting /opt/oracle/product/23ai/dbhomeFree/bin/tnslsnr: please wait...
+db238E   | 
+db238E   | TNSLSNR for Linux: Version 23.0.0.0.0 - Production
+db238E   | System parameter file is /opt/oracle/product/23ai/dbhomeFree/network/admin/listener.ora
+db238E   | Log messages written to /opt/oracle/diag/tnslsnr/db238E/listener/alert/log.xml
+db238E   | Listening on: (DESCRIPTION=(ADDRESS=(PROTOCOL=ipc)(KEY=EXTPROC_FOR_FREE)))
+db238E   | Listening on: (DESCRIPTION=(ADDRESS=(PROTOCOL=tcp)(HOST=0.0.0.0)(PORT=1521)))
+db238E   | 
+db238E   | Connecting to (DESCRIPTION=(ADDRESS=(PROTOCOL=IPC)(KEY=EXTPROC_FOR_FREE)))
+db238E   | STATUS of the LISTENER
+db238E   | ------------------------
+db238E   | Alias                     LISTENER
+db238E   | Version                   TNSLSNR for Linux: Version 23.0.0.0.0 - Production
+db238E   | Start Date                07-SEP-2025 17:25:16
+db238E   | Uptime                    0 days 0 hr. 0 min. 0 sec
+db238E   | Trace Level               off
+db238E   | Security                  ON: Local OS Authentication
+db238E   | SNMP                      OFF
+db238E   | Default Service           FREE
+db238E   | Listener Parameter File   /opt/oracle/product/23ai/dbhomeFree/network/admin/listener.ora
+db238E   | Listener Log File         /opt/oracle/diag/tnslsnr/db238E/listener/alert/log.xml
+db238E   | Listening Endpoints Summary...
+db238E   |   (DESCRIPTION=(ADDRESS=(PROTOCOL=ipc)(KEY=EXTPROC_FOR_FREE)))
+db238E   |   (DESCRIPTION=(ADDRESS=(PROTOCOL=tcp)(HOST=0.0.0.0)(PORT=1521)))
+db238E   | The listener supports no services
+db238E   | The command completed successfully
+db238E   | ORACLE instance started.
+db238E   | 
+db238E   | Total System Global Area 1603787632 bytes
+db238E   | Fixed Size               5421936 bytes
+db238E   | Variable Size                  838860800 bytes
+db238E   | Database Buffers       754974720 bytes
+db238E   | Redo Buffers             4530176 bytes
+db238E   | Database mounted.
+db238E   | Database opened.
+db238E   | 
+db238E   | User altered.
+db238E   | 
+db238E   | 
+db238E   | User altered.
+db238E   | 
+db238E   | 
+db238E   | Session altered.
+db238E   | 
+db238E   | 
+db238E   | User altered.
+db238E   | 
+db238E   | 
+db238E   | User altered.
+db238E   | 
+db238E   | (3):--ATTENTION--
+db238E   | 2025-09-07T17:25:27.078493+00:00
+db238E   | Resize operation completed for file# 18, fname /opt/oracle/oradata/FREE/undotbs01.dbf, old size 11264K, new size 21504K
+db238E   | (3):PARALLEL_MAX_SERVERS (with value 1) is insufficient. This may affect transaction recovery performance.
+db238E   | Modify PARALLEL_MAX_SERVERS parameter to a value > 4 (= parallel servers count computed from parameter FAST_START_PARALLEL_ROLLBACK) in PDB ID 3
+db238E   | FREEPDB1(3):Autotune of undo retention is turned on. 
+db238E   | 2025-09-07T17:25:27.420615+00:00
+db238E   | FREEPDB1(3):Opening pdb with Resource Manager plan: DEFAULT_PLAN
+db238E   | Completed: Pluggable database FREEPDB1 opened read write 
+db238E   | Completed: ALTER DATABASE OPEN
+db238W   | Security                  ON: Local OS Authentication
+db238W   | SNMP                      OFF
+db238W   | Default Service           FREE
+db238W   | Listener Parameter File   /opt/oracle/product/23ai/dbhomeFree/network/admin/listener.ora
+db238W   | Listener Log File         /opt/oracle/diag/tnslsnr/db238W/listener/alert/log.xml
+db238W   | Listening Endpoints Summary...
+db238W   |   (DESCRIPTION=(ADDRESS=(PROTOCOL=ipc)(KEY=EXTPROC_FOR_FREE)))
+db238W   |   (DESCRIPTION=(ADDRESS=(PROTOCOL=tcp)(HOST=0.0.0.0)(PORT=1521)))
+db238W   | The listener supports no services
+db238W   | The command completed successfully
+db238W   | ORACLE instance started.
+db238W   | 
+ogg238W  | 2025-09-07T17:25:20.562Z | INFO    | -------------------------------------------------------
+ogg238W  | 2025-09-07T17:25:20.577Z | INFO    | Copyright (c) 2014, 2024, Oracle and/or its affiliates.
+ogg238W  | 2025-09-07T17:25:20.578Z | INFO    | All rights reserved.
+ogg238W  | 2025-09-07T17:25:20.579Z | INFO    | 
+ogg238W  | 2025-09-07T17:25:20.580Z | INFO    | Create deployment started on 09-07-2025 17:25:20
+ogg238W  | 2025-09-07T17:25:20.580Z | INFO    | JRE: 17.0.15
+db238W   | Total System Global Area 1603787632 bytes
+ogg238W  | 2025-09-07T17:25:20.585Z | INFO    | -------------------------------------------------------
+db238W   | Fixed Size               5421936 bytes
+db238W   | Variable Size                  838860800 bytes
+db238W   | Database Buffers       754974720 bytes
+db238W   | Redo Buffers             4530176 bytes
+db238W   | Database mounted.
+db238W   | Database opened.
+db238W   | 
+db238W   | User altered.
+db238W   | 
+db238W   | 
+db238W   | User altered.
+db238W   | 
+db238W   | 
+ogg238W  | Password: 
+ogg238W  | 2025-09-07T17:25:20.616Z | INFO    | Using hostname: 127.0.0.1
+ogg238W  | 2025-09-07T17:25:20.617Z | INFO    | Using default port for adminsrvr: 9001
+ogg238W  | 2025-09-07T17:25:20.618Z | INFO    | Using default port for distsrvr: 9002
+ogg238W  | 2025-09-07T17:25:20.619Z | INFO    | Using default port for rcvrsrvr: 9003
+db238W   | Session altered.
+ogg238W  | 2025-09-07T17:25:20.620Z | INFO    | Using default TCP port for pmsrvr: 9004
+db238W   | 
+ogg238W  | 2025-09-07T17:25:20.620Z | INFO    | Using default UDP port for pmsrvr: 9005
+ogg238W  | 2025-09-07T17:25:20.621Z | INFO    | Using default DataStore type 'BDB' for pmsrvr
+ogg238W  | 2025-09-07T17:25:20.634Z | INFO    | Command: /u01/ogg/bin/ServiceManager --prop /config/network/serviceListeningPort/port --value 9011
+db238W   | 
+ogg238W  | 2025-09-07T17:25:20.637Z | INFO    | Setting child process environment variable OGG_VAR_HOME to /u02/ServiceManager/var
+db238W   | User altered.
+db238W   | 
+db238W   | 
+ogg238W  | 2025-09-07T17:25:20.639Z | INFO    | Setting child process environment variable OGG_SSL_HOME to /u02/ServiceManager/etc/ssl
+ogg238W  | 2025-09-07T17:25:20.640Z | INFO    | Setting child process environment variable OGG_ETC_HOME to /u02/ServiceManager/etc
+db238W   | User altered.
+db238W   | 
+ogg238W  | 2025-09-07T17:25:20.961Z | INFO    | Verifying initial configuration only has the Service Manager deployment.
+db238W   | (3):--ATTENTION--
+db238W   | (3):PARALLEL_MAX_SERVERS (with value 1) is insufficient. This may affect transaction recovery performance.
+db238W   | Modify PARALLEL_MAX_SERVERS parameter to a value > 4 (= parallel servers count computed from parameter FAST_START_PARALLEL_ROLLBACK) in PDB ID 3
+ogg238W  | 2025-09-07T17:25:20.964Z | INFO    | Connecting to http://127.0.0.1:9011 to issue a (GET) request for '/services/v2/deployments'
+db238W   | FREEPDB1(3):Autotune of undo retention is turned on. 
+db238W   | 2025-09-07T17:25:27.110099+00:00
+ogg238W  | 2025-09-07T17:25:24.249Z | INFO    | Return code: 200 (OK).
+ogg238W  | 2025-09-07T17:25:24.264Z | INFO    | Verifying initial configuration only has the Service Manager service.
+db238W   | Resize operation completed for file# 18, fname /opt/oracle/oradata/FREE/undotbs01.dbf, old size 11264K, new size 21504K
+db238W   | 2025-09-07T17:25:27.392553+00:00
+db238W   | FREEPDB1(3):Opening pdb with Resource Manager plan: DEFAULT_PLAN
+db238W   | Completed: Pluggable database FREEPDB1 opened read write 
+ogg238W  | 2025-09-07T17:25:24.276Z | INFO    | Connecting to http://127.0.0.1:9011 to issue a (GET) request for '/services/v2/deployments/ServiceManager/services'
+ogg238W  | 2025-09-07T17:25:24.366Z | INFO    | Return code: 200 (OK).
+ogg238W  | 2025-09-07T17:25:24.373Z | INFO    | Verifying initial Service Manager listening address.
+ogg238W  | 2025-09-07T17:25:24.385Z | INFO    | Connecting to http://127.0.0.1:9011 to issue a (GET) request for '/services/v2/deployments/ServiceManager/services/ServiceManager'
+db238W   | Completed: ALTER DATABASE OPEN
+ogg238W  | 2025-09-07T17:25:24.477Z | INFO    | Return code: 200 (OK).
+ogg238W  | 2025-09-07T17:25:24.481Z | INFO    | Verifying Service Manager security configuration.
+ogg238W  | 2025-09-07T17:25:24.484Z | INFO    | Connecting to http://127.0.0.1:9011 to issue a (GET) request for '/services/v2/deployments/ServiceManager/services/ServiceManager'
+ogg238W  | 2025-09-07T17:25:24.611Z | INFO    | Return code: 200 (OK).
+ogg238W  | 2025-09-07T17:25:24.615Z | INFO    | Verifying the Certificate Store exists.
+ogg238W  | 2025-09-07T17:25:24.616Z | INFO    | Connecting to http://127.0.0.1:9011 to issue a (GET) request for '/services/v2/deployments/ServiceManager/certificates'
+ogg238W  | 2025-09-07T17:25:24.708Z | INFO    | Return code: 200 (OK).
+ogg238W  | 2025-09-07T17:25:24.713Z | INFO    | Verifying Certificate Store initially doesn't have any client certificates.
+ogg238W  | 2025-09-07T17:25:24.714Z | INFO    | Connecting to http://127.0.0.1:9011 to issue a (GET) request for '/services/v2/deployments/ServiceManager/certificates/client'
+ogg238W  | 2025-09-07T17:25:24.815Z | INFO    | Return code: 200 (OK).
+ogg238W  | 2025-09-07T17:25:24.830Z | INFO    | Verifying Certificate Store initially doesn't have any server certificates.
+ogg238W  | 2025-09-07T17:25:24.831Z | INFO    | Connecting to http://127.0.0.1:9011 to issue a (GET) request for '/services/v2/deployments/ServiceManager/certificates/server'
+ogg238W  | 2025-09-07T17:25:24.892Z | INFO    | Return code: 200 (OK).
+ogg238W  | 2025-09-07T17:25:24.898Z | INFO    | Verifying Certificate Store initially doesn't have any Trust Store certificates.
+ogg238W  | 2025-09-07T17:25:24.900Z | INFO    | Connecting to http://127.0.0.1:9011 to issue a (GET) request for '/services/v2/deployments/ServiceManager/certificates/truststore'
+ogg238W  | 2025-09-07T17:25:24.956Z | INFO    | Return code: 200 (OK).
+ogg238W  | 2025-09-07T17:25:24.957Z | INFO    | Verifying Service Manager initial authorizations.
+ogg238W  | 2025-09-07T17:25:24.960Z | INFO    | Connecting to http://127.0.0.1:9011 to issue a (GET) request for '/services/v2/authorizations/All'
+ogg238W  | 2025-09-07T17:25:25.074Z | INFO    | Return code: 200 (OK).
+ogg238W  | 2025-09-07T17:25:25.107Z | INFO    | Getting the time that the Service Manager first started
+ogg238W  | 2025-09-07T17:25:25.109Z | INFO    | Connecting to http://127.0.0.1:9011 to issue a (GET) request for '/services/v2/config/summary'
+ogg238W  | 2025-09-07T17:25:25.210Z | INFO    | Return code: 200 (OK).
+ogg238W  | 2025-09-07T17:25:25.214Z | INFO    | Updating the password policy configuration in the Service Manager deployment.
+ogg238W  | 2025-09-07T17:25:25.216Z | INFO    | Connecting to http://127.0.0.1:9011 to issue a (PATCH) request for '/services/v2/deployments/ServiceManager'
+ogg238W  | 2025-09-07T17:25:25.281Z | INFO    | Return code: 200 (OK).
+ogg238W  | 2025-09-07T17:25:25.293Z | INFO    | Configuring FIPS in Service Manager.
+ogg238W  | 2025-09-07T17:25:25.295Z | INFO    | Connecting to http://127.0.0.1:9011 to issue a (PATCH) request for '/services/v2/deployments/ServiceManager/services/ServiceManager'
+ogg238W  | 2025-09-07T17:25:25.296Z | INFO    | Configuring FIPS in Service Manager.
+ogg238W  | 2025-09-07T17:25:25.297Z | INFO    | Connecting to http://127.0.0.1:9011 to issue a (GET) request for '/services/v2/deployments/ServiceManager/services/ServiceManager'
+ogg238W  | 2025-09-07T17:25:25.387Z | INFO    | Return code: 200 (OK).
+ogg238W  | 2025-09-07T17:25:25.601Z | INFO    | Return code: 200 (OK).
+ogg238W  | 2025-09-07T17:25:25.605Z | INFO    | Waiting for the Service Manager to finish restarting after updating FIPS configuration.
+ogg238W  | 2025-09-07T17:25:25.610Z | INFO    | Connecting to http://127.0.0.1:9011 to issue a (GET) request for '/services/v2/config/summary'
+ogg238W  | 2025-09-07T17:25:25.894Z | INFO    | Response from server: 
+ogg238W  | 2025-09-07T17:25:25.897Z | INFO    |   OGG-12043: The service is restarting, and the request cannot be processed.
+ogg238W  | 2025-09-07T17:25:25.898Z | INFO    | Waiting for the service to be available to verify REST call to '/services/v2/config/summary'.
+ogg238W  | 2025-09-07T17:25:26.112Z | INFO    | Response from server: 
+ogg238W  | 2025-09-07T17:25:26.113Z | INFO    |   OGG-12043: The service is restarting, and the request cannot be processed.
+ogg238W  | 2025-09-07T17:25:26.114Z | INFO    | Waiting for the service to be available to verify REST call to '/services/v2/config/summary'.
+db238W   | 2025-09-07T17:25:28.022232+00:00
+db238W   | Thread 1 cannot allocate new log, sequence 15
+db238W   | Checkpoint not complete
+db238W   |   Current log# 1 seq# 14 mem# 0: /opt/oracle/oradata/FREE/redo01.log
+db238W   | 2025-09-07T17:25:28.127921+00:00
+db238W   | Thread 1 advanced to log sequence 15 (LGWR switch),  current SCN: 3753346
+db238W   |   Current log# 2 seq# 15 mem# 0: /opt/oracle/oradata/FREE/redo02.log
+db238W   | 2025-09-07T17:25:28.148827+00:00
+db238W   | ARC1 (PID:145): Archived Log entry 4 added for B-1187728560.T-1.S-14 LOS:0x00000000003943ea NXS:0x0000000000394582 NAB:19961 ID 0xffff570323ef LAD:1 [krse.c:4865]
+db238W   | 2025-09-07T17:25:28.162279+00:00
+db238W   | Thread 1 cannot allocate new log, sequence 16
+db238W   | Checkpoint not complete
+db238W   |   Current log# 2 seq# 15 mem# 0: /opt/oracle/oradata/FREE/redo02.log
+db238W   | 2025-09-07T17:25:28.267589+00:00
+db238W   | Thread 1 advanced to log sequence 16 (LGWR switch),  current SCN: 3754248
+db238W   |   Current log# 1 seq# 16 mem# 0: /opt/oracle/oradata/FREE/redo01.log
+db238W   | 2025-09-07T17:25:28.310746+00:00
+db238W   | ARC3 (PID:149): Archived Log entry 5 added for B-1187728560.T-1.S-15 LOS:0x0000000000394582 NXS:0x0000000000394908 NAB:19961 ID 0xffff570323ef LAD:1 [krse.c:4865]
+db238E   | 2025-09-07T17:25:28.089118+00:00
+db238E   | Thread 1 cannot allocate new log, sequence 15
+db238E   | Checkpoint not complete
+db238E   |   Current log# 1 seq# 14 mem# 0: /opt/oracle/oradata/FREE/redo01.log
+db238E   | 2025-09-07T17:25:28.194638+00:00
+db238E   | Thread 1 advanced to log sequence 15 (LGWR switch),  current SCN: 3753303
+db238E   |   Current log# 2 seq# 15 mem# 0: /opt/oracle/oradata/FREE/redo02.log
+db238E   | Thread 1 cannot allocate new log, sequence 16
+db238E   | Checkpoint not complete
+db238E   |   Current log# 2 seq# 15 mem# 0: /opt/oracle/oradata/FREE/redo02.log
+db238E   | 2025-09-07T17:25:28.277024+00:00
+db238E   | ORACLE Instance FREE - Cannot allocate log, archival required
+db238E   | --ATTENTION--
+db238E   | 2025-09-07T17:25:28.301030+00:00
+db238E   | ARC1 (PID:146): Archived Log entry 4 added for B-1187728560.T-1.S-14 LOS:0x00000000003943b2 NXS:0x0000000000394557 NAB:19961 ID 0xffff570323ef LAD:1 [krse.c:4865]
+db238E   | Instance is suspended because thread 1 cannot allocate new log, sequence 16. All online logs need archiving. Examine archive trace files for archiving errors.
+db238E   | 2025-09-07T17:25:28.301579+00:00
+db238E   |   Current log# 2 seq# 15 mem# 0: /opt/oracle/oradata/FREE/redo02.log
+db238E   | 2025-09-07T17:25:28.332469+00:00
+db238E   | Thread 1 advanced to log sequence 16 (LGWR switch),  current SCN: 3754220
+db238E   |   Current log# 1 seq# 16 mem# 0: /opt/oracle/oradata/FREE/redo01.log
+db238E   | 2025-09-07T17:25:28.357451+00:00
+db238E   | ARC3 (PID:150): Archived Log entry 5 added for B-1187728560.T-1.S-15 LOS:0x0000000000394557 NXS:0x00000000003948ea NAB:19947 ID 0xffff570323ef LAD:1 [krse.c:4865]
+db238E   | 2025-09-07T17:25:28.414001+00:00
+db238E   | FREEPDB1(3):Resize operation completed for file# 23, fname /opt/oracle/oradata/FREE/FREEPDB1/undotbs01.dbf, old size 11264K, new size 21504K
+ogg238E  | 2025-09-07T17:25:29.779Z | INFO    | Return code: 200 (OK).
+ogg238E  | 2025-09-07T17:25:29.784Z | INFO    | ...Skipping operation 'Enabling StatsD Metrics for the Service Manager.', configuration does not meet operation conditions.
+ogg238E  | 2025-09-07T17:25:29.785Z | INFO    | Getting the time before adding the administrator user.
+ogg238E  | 2025-09-07T17:25:29.785Z | INFO    | Connecting to http://127.0.0.1:9011 to issue a (GET) request for '/services/v2/config/summary'
+ogg238W  | 2025-09-07T17:25:29.789Z | INFO    | Return code: 200 (OK).
+ogg238W  | 2025-09-07T17:25:29.795Z | INFO    | ...Skipping operation 'Enabling StatsD Metrics for the Service Manager.', configuration does not meet operation conditions.
+ogg238W  | 2025-09-07T17:25:29.796Z | INFO    | Getting the time before adding the administrator user.
+ogg238W  | 2025-09-07T17:25:29.796Z | INFO    | Connecting to http://127.0.0.1:9011 to issue a (GET) request for '/services/v2/config/summary'
+ogg238E  | 2025-09-07T17:25:29.831Z | INFO    | Return code: 200 (OK).
+ogg238E  | 2025-09-07T17:25:29.838Z | INFO    | Configuring the administrator user for the Service Manager.
+ogg238E  | 2025-09-07T17:25:29.841Z | INFO    | Connecting to http://127.0.0.1:9011 to issue a (POST) request for '/services/v2/authorizations/security/oggadmin'
+ogg238W  | 2025-09-07T17:25:29.843Z | INFO    | Return code: 200 (OK).
+ogg238W  | 2025-09-07T17:25:29.845Z | INFO    | Configuring the administrator user for the Service Manager.
+ogg238W  | 2025-09-07T17:25:29.848Z | INFO    | Connecting to http://127.0.0.1:9011 to issue a (POST) request for '/services/v2/authorizations/security/oggadmin'
+ogg238E  | 2025-09-07T17:25:29.954Z | INFO    | Return code: 201 (Created).
+ogg238E  | 2025-09-07T17:25:29.957Z | INFO    | Updating Service Manager for authentication changes to take effect.
+ogg238E  | 2025-09-07T17:25:29.957Z | INFO    | Connecting to http://127.0.0.1:9011 to issue a (PATCH) request for '/services/v2/deployments/ServiceManager/services/ServiceManager'
+ogg238E  | 2025-09-07T17:25:29.958Z | INFO    | Updating Service Manager for authentication changes to take effect.
+ogg238E  | 2025-09-07T17:25:29.959Z | INFO    | Connecting to http://127.0.0.1:9011 to issue a (GET) request for '/services/v2/deployments/ServiceManager/services/ServiceManager'
+ogg238W  | 2025-09-07T17:25:29.965Z | INFO    | Return code: 201 (Created).
+ogg238W  | 2025-09-07T17:25:29.968Z | INFO    | Updating Service Manager for authentication changes to take effect.
+ogg238W  | 2025-09-07T17:25:29.969Z | INFO    | Connecting to http://127.0.0.1:9011 to issue a (PATCH) request for '/services/v2/deployments/ServiceManager/services/ServiceManager'
+ogg238W  | 2025-09-07T17:25:29.970Z | INFO    | Updating Service Manager for authentication changes to take effect.
+ogg238W  | 2025-09-07T17:25:29.970Z | INFO    | Connecting to http://127.0.0.1:9011 to issue a (GET) request for '/services/v2/deployments/ServiceManager/services/ServiceManager'
+ogg238E  | 2025-09-07T17:25:29.987Z | INFO    | Return code: 200 (OK).
+ogg238W  | 2025-09-07T17:25:30.002Z | INFO    | Return code: 200 (OK).
+ogg238E  | 2025-09-07T17:25:30.045Z | INFO    | Return code: 200 (OK).
+ogg238E  | 2025-09-07T17:25:30.048Z | INFO    | Waiting for the Service Manager to finish restarting after configuring authentication.
+ogg238E  | 2025-09-07T17:25:30.048Z | INFO    | Connecting to http://127.0.0.1:9011/services/v2/config/summary (GET) as 'oggadmin'.
+ogg238W  | 2025-09-07T17:25:30.070Z | INFO    | Return code: 200 (OK).
+ogg238W  | 2025-09-07T17:25:30.071Z | INFO    | Waiting for the Service Manager to finish restarting after configuring authentication.
+ogg238W  | 2025-09-07T17:25:30.072Z | INFO    | Connecting to http://127.0.0.1:9011/services/v2/config/summary (GET) as 'oggadmin'.
+ogg238W  | 2025-09-07T17:25:30.330Z | INFO    | Response from server: 
+ogg238W  | 2025-09-07T17:25:30.331Z | INFO    |   OGG-12043: The service is restarting, and the request cannot be processed.
+ogg238W  | 2025-09-07T17:25:30.331Z | INFO    | Waiting for the service to be available to verify REST call to 'http://127.0.0.1:9011/services/v2/config/summary'.
+ogg238E  | 2025-09-07T17:25:30.410Z | INFO    | Response from server: 
+ogg238E  | 2025-09-07T17:25:30.410Z | INFO    |   OGG-12043: The service is restarting, and the request cannot be processed.
+ogg238E  | 2025-09-07T17:25:30.411Z | INFO    | Waiting for the service to be available to verify REST call to 'http://127.0.0.1:9011/services/v2/config/summary'.
+ogg238W  | 2025-09-07T17:25:30.549Z | INFO    | Response from server: 
+ogg238W  | 2025-09-07T17:25:30.550Z | INFO    |   OGG-12043: The service is restarting, and the request cannot be processed.
+ogg238W  | 2025-09-07T17:25:30.550Z | INFO    | Waiting for the service to be available to verify REST call to 'http://127.0.0.1:9011/services/v2/config/summary'.
+ogg238E  | 2025-09-07T17:25:30.624Z | INFO    | Response from server: 
+ogg238E  | 2025-09-07T17:25:30.626Z | INFO    |   OGG-12043: The service is restarting, and the request cannot be processed.
+ogg238E  | 2025-09-07T17:25:30.626Z | INFO    | Waiting for the service to be available to verify REST call to 'http://127.0.0.1:9011/services/v2/config/summary'.
+db238W   | 2025-09-07T17:25:32.292814+00:00
+db238W   | FREEPDB1(3):Resize operation completed for file# 23, fname /opt/oracle/oradata/FREE/FREEPDB1/undotbs01.dbf, old size 11264K, new size 21504K
+ogg238W  | 2025-09-07T17:25:34.247Z | INFO    | Return code: 200 (OK).
+ogg238W  | 2025-09-07T17:25:34.250Z | INFO    | Verifying Service Manager authentication configuration.
+ogg238W  | 2025-09-07T17:25:34.250Z | INFO    | Connecting to http://127.0.0.1:9011/services/v2/deployments/ServiceManager/services/ServiceManager (GET) as 'oggadmin'.
+ogg238W  | 2025-09-07T17:25:34.308Z | INFO    | Return code: 200 (OK).
+ogg238W  | 2025-09-07T17:25:34.313Z | INFO    | Install Plugin Service in the Service Manager.
+ogg238W  | 2025-09-07T17:25:34.313Z | INFO    | Connecting to http://127.0.0.1:9011 to issue a (POST) request for '/services/v2/deployments/ServiceManager/services/pluginsrvr' as 'oggadmin'.
+ogg238E  | 2025-09-07T17:25:34.323Z | INFO    | Return code: 200 (OK).
+ogg238E  | 2025-09-07T17:25:34.326Z | INFO    | Verifying Service Manager authentication configuration.
+ogg238E  | 2025-09-07T17:25:34.327Z | INFO    | Connecting to http://127.0.0.1:9011/services/v2/deployments/ServiceManager/services/ServiceManager (GET) as 'oggadmin'.
+ogg238W  | 2025-09-07T17:25:34.379Z | INFO    | Return code: 201 (Created).
+ogg238E  | 2025-09-07T17:25:34.397Z | INFO    | Return code: 200 (OK).
+ogg238E  | 2025-09-07T17:25:34.402Z | INFO    | Install Plugin Service in the Service Manager.
+ogg238E  | 2025-09-07T17:25:34.402Z | INFO    | Connecting to http://127.0.0.1:9011 to issue a (POST) request for '/services/v2/deployments/ServiceManager/services/pluginsrvr' as 'oggadmin'.
+ogg238E  | 2025-09-07T17:25:34.465Z | INFO    | Return code: 201 (Created).
+db238W   | 2025-09-07T17:25:35.479871+00:00
+db238W   | Thread 1 advanced to log sequence 17 (LGWR switch),  current SCN: 3757001
+db238W   |   Current log# 2 seq# 17 mem# 0: /opt/oracle/oradata/FREE/redo02.log
+db238W   | 2025-09-07T17:25:35.491712+00:00
+db238W   | ARC0 (PID:143): Archived Log entry 6 added for B-1187728560.T-1.S-16 LOS:0x0000000000394908 NXS:0x00000000003953c9 NAB:19961 ID 0xffff570323ef LAD:1 [krse.c:4865]
+db238E   | 2025-09-07T17:25:35.703826+00:00
+db238E   | Thread 1 advanced to log sequence 17 (LGWR switch),  current SCN: 3756127
+db238E   |   Current log# 2 seq# 17 mem# 0: /opt/oracle/oradata/FREE/redo02.log
+db238E   | 2025-09-07T17:25:35.716017+00:00
+db238E   | ARC0 (PID:144): Archived Log entry 6 added for B-1187728560.T-1.S-16 LOS:0x00000000003948ea NXS:0x000000000039505f NAB:19961 ID 0xffff570323ef LAD:1 [krse.c:4865]
+ogg238W  | Oracle GoldenGate Service Manager for Oracle
+ogg238W  | Version 23.8.0.25.04 OGGCORE_23.8.0.0.0OGGRU_LINUX.X64_250412.2241_FBO
+ogg238W  | 
+ogg238W  | Copyright (C) 1995, 2025, Oracle and/or its affiliates. All rights reserved.
+ogg238W  | 
+ogg238W  | Linux, x64, 64bit (optimized) on Apr 13 2025 11:22:41
+ogg238W  | Operating system character set identified as UTF-8.
+ogg238E  | Oracle GoldenGate Service Manager for Oracle
+ogg238E  | Version 23.8.0.25.04 OGGCORE_23.8.0.0.0OGGRU_LINUX.X64_250412.2241_FBO
+ogg238E  | 
+ogg238E  | Copyright (C) 1995, 2025, Oracle and/or its affiliates. All rights reserved.
+ogg238E  | 
+ogg238E  | Linux, x64, 64bit (optimized) on Apr 13 2025 11:22:41
+ogg238E  | Operating system character set identified as UTF-8.
+ogg238E  | 2025-09-07T17:25:47.368Z | INFO    | Using default value for OGG_CONF_HOME: OGG_ETC_HOME/conf
+ogg238E  | 2025-09-07T17:25:47.588Z | INFO    | Using default value for OGG_SSL_HOME: OGG_ETC_HOME/ssl
+ogg238E  | 2025-09-07T17:25:47.589Z | INFO    | Using default value for OGG_DATA_HOME: OGG_VAR_HOME/lib/data
+ogg238E  | 2025-09-07T17:25:47.590Z | INFO    | Using default value for OGG_ARCHIVE_HOME: OGG_VAR_HOME/lib/archive
+ogg238E  | 2025-09-07T17:25:47.591Z | INFO    | -------------------------------------------------------
+ogg238E  | 2025-09-07T17:25:47.593Z | INFO    | Copyright (c) 2014, 2024, Oracle and/or its affiliates.
+ogg238E  | 2025-09-07T17:25:47.593Z | INFO    | All rights reserved.
+ogg238E  | 2025-09-07T17:25:47.594Z | INFO    | 
+ogg238E  | 2025-09-07T17:25:47.595Z | INFO    | Create deployment started on 09-07-2025 17:25:47
+ogg238E  | 2025-09-07T17:25:47.595Z | INFO    | JRE: 17.0.15
+ogg238W  | 2025-09-07T17:25:47.380Z | INFO    | Using default value for OGG_CONF_HOME: OGG_ETC_HOME/conf
+ogg238E  | 2025-09-07T17:25:47.597Z | INFO    | -------------------------------------------------------
+ogg238W  | 2025-09-07T17:25:47.598Z | INFO    | Using default value for OGG_SSL_HOME: OGG_ETC_HOME/ssl
+ogg238W  | 2025-09-07T17:25:47.599Z | INFO    | Using default value for OGG_DATA_HOME: OGG_VAR_HOME/lib/data
+ogg238W  | 2025-09-07T17:25:47.600Z | INFO    | Using default value for OGG_ARCHIVE_HOME: OGG_VAR_HOME/lib/archive
+ogg238W  | 2025-09-07T17:25:47.601Z | INFO    | -------------------------------------------------------
+ogg238W  | 2025-09-07T17:25:47.602Z | INFO    | Copyright (c) 2014, 2024, Oracle and/or its affiliates.
+ogg238W  | 2025-09-07T17:25:47.602Z | INFO    | All rights reserved.
+ogg238W  | 2025-09-07T17:25:47.603Z | INFO    | 
+ogg238W  | 2025-09-07T17:25:47.604Z | INFO    | Create deployment started on 09-07-2025 17:25:47
+ogg238W  | 2025-09-07T17:25:47.604Z | INFO    | JRE: 17.0.15
+ogg238W  | 2025-09-07T17:25:47.605Z | INFO    | -------------------------------------------------------
+ogg238E  | Password: 
+ogg238E  | 2025-09-07T17:25:47.630Z | INFO    | Using hostname: 127.0.0.1
+ogg238W  | Password: 
+ogg238W  | 2025-09-07T17:25:47.637Z | INFO    | Using hostname: 127.0.0.1
+ogg238E  | 2025-09-07T17:25:47.710Z | INFO    | Verifying Service Manager deployment status.
+ogg238E  | 2025-09-07T17:25:47.711Z | INFO    | Connecting to http://127.0.0.1:9011 to issue a (GET) request for '/services/v2/deployments/ServiceManager' as 'oggadmin'.
+ogg238W  | 2025-09-07T17:25:47.750Z | INFO    | Verifying Service Manager deployment status.
+ogg238W  | 2025-09-07T17:25:47.752Z | INFO    | Connecting to http://127.0.0.1:9011 to issue a (GET) request for '/services/v2/deployments/ServiceManager' as 'oggadmin'.
+ogg238E  | 2025-09-07T17:25:47.907Z | INFO    | Return code: 200 (OK).
+ogg238E  | 2025-09-07T17:25:47.914Z | INFO    | Adding 'EAST' deployment.
+ogg238E  | 2025-09-07T17:25:47.915Z | INFO    | Connecting to http://127.0.0.1:9011 to issue a (POST) request for '/services/v2/deployments/EAST' as 'oggadmin'.
+ogg238W  | 2025-09-07T17:25:47.913Z | INFO    | Return code: 200 (OK).
+ogg238W  | 2025-09-07T17:25:47.927Z | INFO    | Adding 'WEST' deployment.
+ogg238W  | 2025-09-07T17:25:47.928Z | INFO    | Connecting to http://127.0.0.1:9011 to issue a (POST) request for '/services/v2/deployments/WEST' as 'oggadmin'.
+ogg238E  | 2025-09-07T17:25:47.983Z | INFO    | Return code: 201 (Created).
+ogg238E  | 2025-09-07T17:25:47.985Z | INFO    | Configuring and starting the Administration Service.
+ogg238E  | 2025-09-07T17:25:47.986Z | INFO    | Connecting to http://127.0.0.1:9011 to issue a (POST) request for '/services/v2/deployments/EAST/services/adminsrvr' as 'oggadmin'.
+ogg238W  | 2025-09-07T17:25:48.000Z | INFO    | Return code: 201 (Created).
+ogg238W  | 2025-09-07T17:25:48.002Z | INFO    | Configuring and starting the Administration Service.
+ogg238W  | 2025-09-07T17:25:48.003Z | INFO    | Connecting to http://127.0.0.1:9011 to issue a (POST) request for '/services/v2/deployments/WEST/services/adminsrvr' as 'oggadmin'.
+ogg238E  | 2025-09-07T17:25:48.080Z | INFO    | Return code: 201 (Created).
+ogg238E  | 2025-09-07T17:25:48.082Z | INFO    | Verifying the initial Administration Service configuration.
+ogg238E  | 2025-09-07T17:25:48.083Z | INFO    | Connecting to http://127.0.0.1:9011 to issue a (GET) request for '/services/v2/deployments/EAST/services/adminsrvr' as 'oggadmin'.
+ogg238W  | 2025-09-07T17:25:48.092Z | INFO    | Return code: 201 (Created).
+ogg238W  | 2025-09-07T17:25:48.094Z | INFO    | Verifying the initial Administration Service configuration.
+ogg238W  | 2025-09-07T17:25:48.094Z | INFO    | Connecting to http://127.0.0.1:9011 to issue a (GET) request for '/services/v2/deployments/WEST/services/adminsrvr' as 'oggadmin'.
+ogg238W  | 2025-09-07T17:25:48.160Z | INFO    | Return code: 200 (OK).
+ogg238W  | 2025-09-07T17:25:48.162Z | INFO    | Adding user 'oggadmin' to administer the deployment.
+ogg238W  | 2025-09-07T17:25:48.164Z | INFO    | Connecting to http://127.0.0.1:9012/services/v2/authorizations/security/oggadmin (POST) as 'oggadmin'.
+ogg238E  | 2025-09-07T17:25:48.172Z | INFO    | Return code: 200 (OK).
+ogg238E  | 2025-09-07T17:25:48.178Z | INFO    | Adding user 'oggadmin' to administer the deployment.
+ogg238E  | 2025-09-07T17:25:48.180Z | INFO    | Connecting to http://127.0.0.1:9012/services/v2/authorizations/security/oggadmin (POST) as 'oggadmin'.
+ogg238W  | Oracle GoldenGate Administration Service for Oracle
+ogg238W  | Version 23.8.0.25.04 OGGCORE_23.8.0.0.0OGGRU_LINUX.X64_250412.2241_FBO
+ogg238W  | 
+ogg238W  | Copyright (C) 1995, 2025, Oracle and/or its affiliates. All rights reserved.
+ogg238W  | 
+ogg238W  | Linux, x64, 64bit (optimized), Oracle on Apr 13 2025 11:23:58
+ogg238W  | Operating system character set identified as UTF-8.
+ogg238E  | Oracle GoldenGate Administration Service for Oracle
+ogg238E  | Version 23.8.0.25.04 OGGCORE_23.8.0.0.0OGGRU_LINUX.X64_250412.2241_FBO
+ogg238E  | 
+ogg238E  | Copyright (C) 1995, 2025, Oracle and/or its affiliates. All rights reserved.
+ogg238E  | 
+ogg238E  | Linux, x64, 64bit (optimized), Oracle on Apr 13 2025 11:23:58
+ogg238E  | Operating system character set identified as UTF-8.
+ogg238W  | 2025-09-07T17:25:51.284Z | INFO    | Return code: 201 (Created).
+ogg238W  | 2025-09-07T17:25:51.286Z | INFO    | Restarting the Administration Service for the authentication changes to take effect.
+ogg238W  | 2025-09-07T17:25:51.287Z | INFO    | Connecting to http://127.0.0.1:9011 to issue a (PATCH) request for '/services/v2/deployments/WEST/services/adminsrvr' as 'oggadmin'.
+ogg238W  | 2025-09-07T17:25:51.288Z | INFO    | Restarting the Administration Service for the authentication changes to take effect.
+ogg238W  | 2025-09-07T17:25:51.289Z | INFO    | Connecting to http://127.0.0.1:9011 to issue a (GET) request for '/services/v2/deployments/WEST/services/adminsrvr' as 'oggadmin'.
+ogg238E  | 2025-09-07T17:25:51.306Z | INFO    | Return code: 201 (Created).
+ogg238E  | 2025-09-07T17:25:51.309Z | INFO    | Restarting the Administration Service for the authentication changes to take effect.
+ogg238E  | 2025-09-07T17:25:51.310Z | INFO    | Connecting to http://127.0.0.1:9011 to issue a (PATCH) request for '/services/v2/deployments/EAST/services/adminsrvr' as 'oggadmin'.
+ogg238E  | 2025-09-07T17:25:51.311Z | INFO    | Restarting the Administration Service for the authentication changes to take effect.
+ogg238E  | 2025-09-07T17:25:51.312Z | INFO    | Connecting to http://127.0.0.1:9011 to issue a (GET) request for '/services/v2/deployments/EAST/services/adminsrvr' as 'oggadmin'.
+ogg238W  | 2025-09-07T17:25:51.416Z | INFO    | Return code: 200 (OK).
+ogg238E  | 2025-09-07T17:25:51.442Z | INFO    | Return code: 200 (OK).
+ogg238W  | Stopping...STOPPED.
+ogg238E  | Stopping...STOPPED.
+ogg238W  | 2025-09-07T17:25:55.381Z | INFO    | Return code: 200 (OK).
+ogg238W  | 2025-09-07T17:25:55.384Z | INFO    | Verifying the Administration Service status and configuration.
+ogg238W  | 2025-09-07T17:25:55.384Z | INFO    | Connecting to http://127.0.0.1:9011 to issue a (GET) request for '/services/v2/deployments/WEST/services/adminsrvr' as 'oggadmin'.
+ogg238E  | 2025-09-07T17:25:55.411Z | INFO    | Return code: 200 (OK).
+ogg238E  | 2025-09-07T17:25:55.417Z | INFO    | Verifying the Administration Service status and configuration.
+ogg238E  | 2025-09-07T17:25:55.418Z | INFO    | Connecting to http://127.0.0.1:9011 to issue a (GET) request for '/services/v2/deployments/EAST/services/adminsrvr' as 'oggadmin'.
+ogg238W  | 2025-09-07T17:25:55.460Z | INFO    | Return code: 200 (OK).
+ogg238W  | 2025-09-07T17:25:55.462Z | INFO    | Configuring and starting the Distribution Service.
+ogg238W  | 2025-09-07T17:25:55.462Z | INFO    | Connecting to http://127.0.0.1:9011 to issue a (POST) request for '/services/v2/deployments/WEST/services/distsrvr' as 'oggadmin'.
+ogg238E  | 2025-09-07T17:25:55.507Z | INFO    | Return code: 200 (OK).
+ogg238E  | 2025-09-07T17:25:55.513Z | INFO    | Configuring and starting the Distribution Service.
+ogg238E  | 2025-09-07T17:25:55.514Z | INFO    | Connecting to http://127.0.0.1:9011 to issue a (POST) request for '/services/v2/deployments/EAST/services/distsrvr' as 'oggadmin'.
+ogg238W  | 2025-09-07T17:25:55.533Z | INFO    | Return code: 201 (Created).
+ogg238W  | 2025-09-07T17:25:55.534Z | INFO    | Verifying the Distribution Service status and configuration.
+ogg238W  | 2025-09-07T17:25:55.534Z | INFO    | Connecting to http://127.0.0.1:9011 to issue a (GET) request for '/services/v2/deployments/WEST/services/distsrvr' as 'oggadmin'.
+ogg238W  | 2025-09-07T17:25:55.615Z | INFO    | Return code: 200 (OK).
+ogg238W  | 2025-09-07T17:25:55.621Z | INFO    | Configuring and starting the Receiver Service.
+ogg238W  | 2025-09-07T17:25:55.631Z | INFO    | Connecting to http://127.0.0.1:9011 to issue a (POST) request for '/services/v2/deployments/WEST/services/recvsrvr' as 'oggadmin'.
+ogg238E  | 2025-09-07T17:25:55.634Z | INFO    | Return code: 201 (Created).
+ogg238E  | 2025-09-07T17:25:55.645Z | INFO    | Verifying the Distribution Service status and configuration.
+ogg238E  | 2025-09-07T17:25:55.650Z | INFO    | Connecting to http://127.0.0.1:9011 to issue a (GET) request for '/services/v2/deployments/EAST/services/distsrvr' as 'oggadmin'.
+ogg238W  | 2025-09-07T17:25:55.789Z | INFO    | Return code: 201 (Created).
+ogg238W  | 2025-09-07T17:25:55.790Z | INFO    | Verifying the Receiver Service status and configuration.
+ogg238W  | 2025-09-07T17:25:55.791Z | INFO    | Connecting to http://127.0.0.1:9011 to issue a (GET) request for '/services/v2/deployments/WEST/services/recvsrvr' as 'oggadmin'.
+ogg238E  | 2025-09-07T17:25:55.833Z | INFO    | Return code: 200 (OK).
+ogg238E  | 2025-09-07T17:25:55.834Z | INFO    | Configuring and starting the Receiver Service.
+ogg238E  | 2025-09-07T17:25:55.835Z | INFO    | Connecting to http://127.0.0.1:9011 to issue a (POST) request for '/services/v2/deployments/EAST/services/recvsrvr' as 'oggadmin'.
+ogg238W  | 2025-09-07T17:25:55.877Z | INFO    | Return code: 200 (OK).
+ogg238W  | 2025-09-07T17:25:55.878Z | INFO    | Configuring and starting the Performance Metrics Service.
+ogg238W  | 2025-09-07T17:25:55.889Z | INFO    | Connecting to http://127.0.0.1:9011 to issue a (POST) request for '/services/v2/deployments/WEST/services/pmsrvr' as 'oggadmin'.
+ogg238E  | 2025-09-07T17:25:55.984Z | INFO    | Return code: 201 (Created).
+ogg238E  | 2025-09-07T17:25:55.985Z | INFO    | Verifying the Receiver Service status and configuration.
+ogg238E  | 2025-09-07T17:25:55.985Z | INFO    | Connecting to http://127.0.0.1:9011 to issue a (GET) request for '/services/v2/deployments/EAST/services/recvsrvr' as 'oggadmin'.
+ogg238W  | 2025-09-07T17:25:56.047Z | INFO    | Return code: 201 (Created).
+ogg238W  | 2025-09-07T17:25:56.056Z | INFO    | Verifying the Performance Metrics Service status and configuration.
+ogg238W  | 2025-09-07T17:25:56.061Z | INFO    | Connecting to http://127.0.0.1:9011 to issue a (GET) request for '/services/v2/deployments/WEST/services/pmsrvr' as 'oggadmin'.
+ogg238E  | 2025-09-07T17:25:56.137Z | INFO    | Return code: 200 (OK).
+ogg238E  | 2025-09-07T17:25:56.137Z | INFO    | Configuring and starting the Performance Metrics Service.
+ogg238E  | 2025-09-07T17:25:56.138Z | INFO    | Connecting to http://127.0.0.1:9011 to issue a (POST) request for '/services/v2/deployments/EAST/services/pmsrvr' as 'oggadmin'.
+ogg238W  | 2025-09-07T17:25:56.239Z | INFO    | Return code: 200 (OK).
+ogg238W  | 2025-09-07T17:25:56.255Z | INFO    | Creating the GLOBALS file.
+ogg238W  | 2025-09-07T17:25:56.258Z | INFO    | Connecting to http://127.0.0.1:9012/services/v2/config/files/GLOBALS (POST) as 'oggadmin'.
+ogg238E  | 2025-09-07T17:25:56.449Z | INFO    | Return code: 201 (Created).
+ogg238E  | 2025-09-07T17:25:56.467Z | INFO    | Verifying the Performance Metrics Service status and configuration.
+ogg238E  | 2025-09-07T17:25:56.477Z | INFO    | Connecting to http://127.0.0.1:9011 to issue a (GET) request for '/services/v2/deployments/EAST/services/pmsrvr' as 'oggadmin'.
+ogg238E  | 2025-09-07T17:25:56.691Z | INFO    | Return code: 200 (OK).
+ogg238E  | 2025-09-07T17:25:56.693Z | INFO    | Creating the GLOBALS file.
+ogg238E  | 2025-09-07T17:25:56.694Z | INFO    | Connecting to http://127.0.0.1:9012/services/v2/config/files/GLOBALS (POST) as 'oggadmin'.
+ogg238E  | Oracle GoldenGate Administration Service for Oracle
+ogg238E  | Version 23.8.0.25.04 OGGCORE_23.8.0.0.0OGGRU_LINUX.X64_250412.2241_FBO
+ogg238E  | 
+ogg238E  | Copyright (C) 1995, 2025, Oracle and/or its affiliates. All rights reserved.
+ogg238E  | 
+ogg238E  | Linux, x64, 64bit (optimized), Oracle on Apr 13 2025 11:23:58
+ogg238E  | Operating system character set identified as UTF-8.
+ogg238W  | Oracle GoldenGate Administration Service for Oracle
+ogg238W  | Version 23.8.0.25.04 OGGCORE_23.8.0.0.0OGGRU_LINUX.X64_250412.2241_FBO
+ogg238W  | 
+ogg238W  | Copyright (C) 1995, 2025, Oracle and/or its affiliates. All rights reserved.
+ogg238W  | 
+ogg238W  | Linux, x64, 64bit (optimized), Oracle on Apr 13 2025 11:23:58
+ogg238W  | Operating system character set identified as UTF-8.
+ogg238E  | Oracle GoldenGate Performance Metrics Service for Oracle
+ogg238E  | Version 23.8.0.25.04 OGGCORE_23.8.0.0.0OGGRU_LINUX.X64_250412.2241_FBO
+ogg238E  | 
+ogg238E  | Copyright (C) 1995, 2025, Oracle and/or its affiliates. All rights reserved.
+ogg238E  | 
+ogg238E  | Linux, x64, 64bit (optimized) on Apr 13 2025 11:14:00
+ogg238E  | Operating system character set identified as UTF-8.
+ogg238W  | Oracle GoldenGate Performance Metrics Service for Oracle
+ogg238W  | Version 23.8.0.25.04 OGGCORE_23.8.0.0.0OGGRU_LINUX.X64_250412.2241_FBO
+ogg238W  | 
+ogg238W  | Copyright (C) 1995, 2025, Oracle and/or its affiliates. All rights reserved.
+ogg238W  | 
+ogg238W  | Linux, x64, 64bit (optimized) on Apr 13 2025 11:14:00
+ogg238W  | Operating system character set identified as UTF-8.
+ogg238E  | 
+ogg238E  | Data Store Does not Exist, Creating New Data Store.
+ogg238W  | 
+ogg238W  | Data Store Does not Exist, Creating New Data Store.
+ogg238E  | 
+ogg238E  | Process ID .......: 376
+ogg238E  | HTTP Port ........: 9015
+ogg238E  | IPC Path .........: /u02/Deployment/var/run/PMSERVER.s
+ogg238W  | 
+ogg238W  | Process ID .......: 374
+ogg238W  | HTTP Port ........: 9015
+ogg238W  | IPC Path .........: /u02/Deployment/var/run/PMSERVER.s
+ogg238W  | 2025-09-07T17:25:59.495Z | INFO    | Return code: 201 (Created).
+ogg238W  | 2025-09-07T17:25:59.501Z | INFO    | Verifying the Performance Metrics service is running.
+ogg238W  | 2025-09-07T17:25:59.503Z | INFO    | Connecting to http://127.0.0.1:9011 to issue a (GET) request for '/services/v2/deployments/WEST/services/pmsrvr' as 'oggadmin'.
+ogg238W  | 2025-09-07T17:25:59.560Z | INFO    | Return code: 200 (OK).
+ogg238W  | 2025-09-07T17:25:59.565Z | INFO    | ...Skipping operation 'Configuring the Performance Metrics service datastore type/home.', configuration does not meet operation conditions.
+ogg238W  | 2025-09-07T17:25:59.567Z | INFO    | Configuring the Performance Metrics service datastore type.
+ogg238W  | 2025-09-07T17:25:59.567Z | INFO    | Connecting to http://127.0.0.1:9015/services/v2/datastore (PATCH) as 'oggadmin'.
+ogg238W  | 2025-09-07T17:25:59.664Z | INFO    | Return code: 200 (OK).
+ogg238W  | 2025-09-07T17:25:59.666Z | INFO    | Verifying the Performance Metrics service is running after updating the datastore type and restarting it.
+ogg238W  | 2025-09-07T17:25:59.667Z | INFO    | Connecting to http://127.0.0.1:9011 to issue a (GET) request for '/services/v2/deployments/WEST/services/pmsrvr' as 'oggadmin'.
+ogg238W  | 2025-09-07T17:25:59.720Z | INFO    | Return code: 200 (OK).
+ogg238W  | 2025-09-07T17:25:59.725Z | INFO    | Verifying the 'WEST' deployment is running.
+ogg238W  | 2025-09-07T17:25:59.726Z | INFO    | Connecting to http://127.0.0.1:9011 to issue a (GET) request for '/services/v2/deployments/WEST' as 'oggadmin'.
+ogg238W  | 2025-09-07T17:25:59.793Z | INFO    | Return code: 200 (OK).
+ogg238W  | 2025-09-07T17:25:59.797Z | INFO    | Deployment (WEST) creation succeeded.
+ogg238W  | 2025-09-07T17:25:59.799Z | INFO    | ALL DONE.
+ogg238W  | 
+ogg238W  | **************************************************
+ogg238W  | *          Collector Statistics                  *
+ogg238W  | **************************************************
+ogg238W  | Number of Sending Processes ... 3
+ogg238W  | Packets Received............... 8
+ogg238W  | Bytes Received ................ 8109
+ogg238W  | Receive Errors ................ 0
+ogg238W  | Sequence Errors ............... 0
+ogg238W  | Missing Packets ............... 0
+ogg238W  | Invalid Packets ............... 0
+ogg238W  | Max Queue Depth................ 1
+ogg238W  | Times Queue Full............... 0
+ogg238W  | Max Packet Size ............... 3788
+ogg238W  | Min Packet Size ............... 120
+ogg238W  | Ave Packet Size ............... 1013
+ogg238E  | 2025-09-07T17:25:59.907Z | INFO    | Return code: 201 (Created).
+ogg238E  | 2025-09-07T17:25:59.913Z | INFO    | Verifying the Performance Metrics service is running.
+ogg238E  | 2025-09-07T17:25:59.914Z | INFO    | Connecting to http://127.0.0.1:9011 to issue a (GET) request for '/services/v2/deployments/EAST/services/pmsrvr' as 'oggadmin'.
+ogg238E  | 2025-09-07T17:25:59.967Z | INFO    | Return code: 200 (OK).
+ogg238E  | 2025-09-07T17:25:59.971Z | INFO    | ...Skipping operation 'Configuring the Performance Metrics service datastore type/home.', configuration does not meet operation conditions.
+ogg238E  | 2025-09-07T17:25:59.973Z | INFO    | Configuring the Performance Metrics service datastore type.
+ogg238E  | 2025-09-07T17:25:59.974Z | INFO    | Connecting to http://127.0.0.1:9015/services/v2/datastore (PATCH) as 'oggadmin'.
+ogg238E  | 2025-09-07T17:26:00.065Z | INFO    | Return code: 200 (OK).
+ogg238E  | 2025-09-07T17:26:00.069Z | INFO    | Verifying the Performance Metrics service is running after updating the datastore type and restarting it.
+ogg238E  | 2025-09-07T17:26:00.069Z | INFO    | Connecting to http://127.0.0.1:9011 to issue a (GET) request for '/services/v2/deployments/EAST/services/pmsrvr' as 'oggadmin'.
+ogg238E  | 2025-09-07T17:26:00.136Z | INFO    | Return code: 200 (OK).
+ogg238E  | 2025-09-07T17:26:00.143Z | INFO    | Verifying the 'EAST' deployment is running.
+ogg238E  | 2025-09-07T17:26:00.145Z | INFO    | Connecting to http://127.0.0.1:9011 to issue a (GET) request for '/services/v2/deployments/EAST' as 'oggadmin'.
+ogg238E  | 2025-09-07T17:26:00.200Z | INFO    | Return code: 200 (OK).
+ogg238E  | 2025-09-07T17:26:00.202Z | INFO    | Deployment (EAST) creation succeeded.
+ogg238E  | 2025-09-07T17:26:00.205Z | INFO    | ALL DONE.
+ogg238E  | 
+ogg238E  | **************************************************
+ogg238E  | *          Collector Statistics                  *
+ogg238E  | **************************************************
+ogg238E  | Number of Sending Processes ... 3
+ogg238E  | Packets Received............... 8
+ogg238E  | Bytes Received ................ 8045
+ogg238E  | Receive Errors ................ 0
+ogg238E  | Sequence Errors ............... 0
+ogg238E  | Missing Packets ............... 0
+ogg238E  | Invalid Packets ............... 0
+ogg238E  | Max Queue Depth................ 1
+ogg238E  | Times Queue Full............... 0
+ogg238E  | Max Packet Size ............... 3788
+ogg238E  | Min Packet Size ............... 120
+ogg238E  | Ave Packet Size ............... 1005
+ogg238W  | Oracle GoldenGate Performance Metrics Service for Oracle
+ogg238W  | Version 23.8.0.25.04 OGGCORE_23.8.0.0.0OGGRU_LINUX.X64_250412.2241_FBO
+ogg238W  | 
+ogg238W  | Copyright (C) 1995, 2025, Oracle and/or its affiliates. All rights reserved.
+ogg238W  | 
+ogg238W  | Linux, x64, 64bit (optimized) on Apr 13 2025 11:14:00
+ogg238W  | Operating system character set identified as UTF-8.
+ogg238W  | 
+ogg238W  | Data Store Does not Exist, Creating New Data Store.
+ogg238W  | 
+ogg238W  | Process ID .......: 374
+ogg238W  | HTTP Port ........: 9015
+ogg238W  | IPC Path .........: /u02/Deployment/var/run/PMSERVER.s
+ogg238E  | Oracle GoldenGate Performance Metrics Service for Oracle
+ogg238E  | Version 23.8.0.25.04 OGGCORE_23.8.0.0.0OGGRU_LINUX.X64_250412.2241_FBO
+ogg238E  | 
+ogg238E  | Copyright (C) 1995, 2025, Oracle and/or its affiliates. All rights reserved.
+ogg238E  | 
+ogg238E  | Linux, x64, 64bit (optimized) on Apr 13 2025 11:14:00
+ogg238E  | Operating system character set identified as UTF-8.
+ogg238E  | 
+ogg238E  | Data Store Does not Exist, Creating New Data Store.
+ogg238E  | 
+ogg238E  | Process ID .......: 376
+ogg238E  | HTTP Port ........: 9015
+ogg238E  | IPC Path .........: /u02/Deployment/var/run/PMSERVER.s
+ogg238W  | Stopping...STOPPED.
+ogg238E  | Stopping...STOPPED.
+ogg238W  | Oracle GoldenGate Administration Service for Oracle
+ogg238W  | Version 23.8.0.25.04 OGGCORE_23.8.0.0.0OGGRU_LINUX.X64_250412.2241_FBO
+ogg238W  | 
+ogg238W  | Copyright (C) 1995, 2025, Oracle and/or its affiliates. All rights reserved.
+ogg238W  | 
+ogg238W  | Linux, x64, 64bit (optimized), Oracle on Apr 13 2025 11:23:58
+ogg238W  | Operating system character set identified as UTF-8.
+ogg238E  | Oracle GoldenGate Administration Service for Oracle
+ogg238E  | Version 23.8.0.25.04 OGGCORE_23.8.0.0.0OGGRU_LINUX.X64_250412.2241_FBO
+ogg238E  | 
+ogg238E  | Copyright (C) 1995, 2025, Oracle and/or its affiliates. All rights reserved.
+ogg238E  | 
+ogg238E  | Linux, x64, 64bit (optimized), Oracle on Apr 13 2025 11:23:58
+ogg238E  | Operating system character set identified as UTF-8.
+ogg238W  | 
+ogg238W  | **************************************************
+ogg238W  | *          Collector Statistics                  *
+ogg238W  | **************************************************
+ogg238W  | Number of Sending Processes ... 3
+ogg238W  | Packets Received............... 32
+ogg238W  | Bytes Received ................ 52182
+ogg238W  | Receive Errors ................ 0
+ogg238W  | Sequence Errors ............... 2
+ogg238W  | Missing Packets ............... 1
+ogg238W  | Invalid Packets ............... 0
+ogg238W  | Max Queue Depth................ 2
+ogg238W  | Times Queue Full............... 0
+ogg238W  | Max Packet Size ............... 6556
+ogg238W  | Min Packet Size ............... 56
+ogg238W  | Ave Packet Size ............... 1630
+ogg238E  | 
+ogg238E  | **************************************************
+ogg238E  | *          Collector Statistics                  *
+ogg238E  | **************************************************
+ogg238E  | Number of Sending Processes ... 3
+ogg238E  | Packets Received............... 34
+ogg238E  | Bytes Received ................ 55667
+ogg238E  | Receive Errors ................ 0
+ogg238E  | Sequence Errors ............... 0
+ogg238E  | Missing Packets ............... 0
+ogg238E  | Invalid Packets ............... 0
+ogg238E  | Max Queue Depth................ 2
+ogg238E  | Times Queue Full............... 0
+ogg238E  | Max Packet Size ............... 6556
+ogg238E  | Min Packet Size ............... 56
+ogg238E  | Ave Packet Size ............... 1637
+ogg238W  | Stopping...STOPPED.
+ogg238E  | Stopping...STOPPED.
+ogg238W  | 2025-09-07T17:26:06.633+0000 INFO | Stopping  service 'recvsrvr' in deployment 'WEST' (Thread 5)
+ogg238W  | 2025-09-07T17:26:06.637+0000 INFO | Installation topology updated (ServiceManager.Topology)
+ogg238W  | 2025-09-07T17:26:09.644+0000 INFO | Stopped   service 'recvsrvr' in deployment 'WEST' (Thread 5)
+ogg238W  | 2025-09-07T17:26:09.644+0000 INFO | Restarted service 'recvsrvr' in deployment 'WEST' (Thread 5)
+ogg238W  | 2025-09-07T17:26:09.644+0000 INFO | Task 'WEST:recvsrvr' started with process id 576 (WEST:recvsrvr)
+ogg238W  | 2025-09-07T17:26:09.734+0000 INFO | Stopping  service 'pmsrvr' in deployment 'WEST' (Thread 8)
+ogg238W  | 2025-09-07T17:26:09.736+0000 INFO | Installation topology updated (ServiceManager.Topology)
+ogg238W  | 2025-09-07T17:26:12.749+0000 INFO | Stopped   service 'pmsrvr' in deployment 'WEST' (Thread 8)
+ogg238W  | 2025-09-07T17:26:12.749+0000 INFO | Restarted service 'pmsrvr' in deployment 'WEST' (Thread 8)
+ogg238W  | 2025-09-07T17:26:12.749+0000 INFO | Task 'WEST:pmsrvr' started with process id 597 (WEST:pmsrvr)
+ogg238W  | nginx: the configuration file /etc/nginx/nginx.conf syntax is ok
+ogg238W  | nginx: configuration file /etc/nginx/nginx.conf test is successful
+ogg238E  | 2025-09-07T17:26:06.702+0000 INFO | Stopping  service 'recvsrvr' in deployment 'EAST' (Thread 5)
+ogg238E  | 2025-09-07T17:26:06.704+0000 INFO | Installation topology updated (ServiceManager.Topology)
+ogg238E  | 2025-09-07T17:26:10.711+0000 INFO | Stopped   service 'recvsrvr' in deployment 'EAST' (Thread 5)
+ogg238E  | 2025-09-07T17:26:10.711+0000 INFO | Restarted service 'recvsrvr' in deployment 'EAST' (Thread 5)
+ogg238E  | 2025-09-07T17:26:10.711+0000 INFO | Task 'EAST:recvsrvr' started with process id 576 (EAST:recvsrvr)
+ogg238E  | 2025-09-07T17:26:10.800+0000 INFO | Stopping  service 'pmsrvr' in deployment 'EAST' (Thread 8)
+ogg238E  | 2025-09-07T17:26:10.802+0000 INFO | Installation topology updated (ServiceManager.Topology)
+ogg238E  | 2025-09-07T17:26:13.812+0000 INFO | Stopped   service 'pmsrvr' in deployment 'EAST' (Thread 8)
+ogg238E  | 2025-09-07T17:26:13.812+0000 INFO | Restarted service 'pmsrvr' in deployment 'EAST' (Thread 8)
+ogg238E  | 2025-09-07T17:26:13.823+0000 INFO | Task 'EAST:pmsrvr' started with process id 607 (EAST:pmsrvr)
+ogg238E  | nginx: the configuration file /etc/nginx/nginx.conf syntax is ok
+ogg238E  | nginx: configuration file /etc/nginx/nginx.conf test is successful
+ogg238W  | Oracle GoldenGate Performance Metrics Service for Oracle
+ogg238W  | Version 23.8.0.25.04 OGGCORE_23.8.0.0.0OGGRU_LINUX.X64_250412.2241_FBO
+ogg238W  | 
+ogg238W  | Copyright (C) 1995, 2025, Oracle and/or its affiliates. All rights reserved.
+ogg238W  | 
+ogg238W  | Linux, x64, 64bit (optimized) on Apr 13 2025 11:14:00
+ogg238W  | Operating system character set identified as UTF-8.
+ogg238W  | 
+ogg238W  | Process ID .......: 597
+ogg238W  | HTTP Port ........: 9015
+ogg238W  | IPC Path .........: /u02/Deployment/var/run/PMSERVER.s
+ogg238E  | Oracle GoldenGate Performance Metrics Service for Oracle
+ogg238E  | Version 23.8.0.25.04 OGGCORE_23.8.0.0.0OGGRU_LINUX.X64_250412.2241_FBO
+ogg238E  | 
+ogg238E  | Copyright (C) 1995, 2025, Oracle and/or its affiliates. All rights reserved.
+ogg238E  | 
+ogg238E  | Linux, x64, 64bit (optimized) on Apr 13 2025 11:14:00
+ogg238E  | Operating system character set identified as UTF-8.
+ogg238E  | 
+ogg238E  | Process ID .......: 607
+ogg238E  | HTTP Port ........: 9015
+ogg238E  | IPC Path .........: /u02/Deployment/var/run/PMSERVER.s
+db238W   | 2025-09-07T17:26:17.862084+00:00
+db238W   | TABLE SYS.WRP$_REPORTS: ADDED AUTOLIST FRAGMENT SYS_P462 (3) VALUES (( 1459785199, TO_DATE(' 2025-09-01 00:00:00', 'syyyy-mm-dd hh24:mi:ss', 'nls_calendar=gregorian') ))
+db238W   | TABLE SYS.WRP$_REPORTS_DETAILS: ADDED AUTOLIST FRAGMENT SYS_P463 (3) VALUES (( 1459785199, TO_DATE(' 2025-09-01 00:00:00', 'syyyy-mm-dd hh24:mi:ss', 'nls_calendar=gregorian') ))
+db238W   | TABLE SYS.WRP$_REPORTS_TIME_BANDS: ADDED AUTOLIST FRAGMENT SYS_P466 (3) VALUES (( 1459785199, TO_DATE(' 2025-09-01 00:00:00', 'syyyy-mm-dd hh24:mi:ss', 'nls_calendar=gregorian') ))
+db238E   | 2025-09-07T17:26:17.833036+00:00
+db238E   | TABLE SYS.WRP$_REPORTS: ADDED AUTOLIST FRAGMENT SYS_P462 (3) VALUES (( 1459785199, TO_DATE(' 2025-09-01 00:00:00', 'syyyy-mm-dd hh24:mi:ss', 'nls_calendar=gregorian') ))
+db238E   | TABLE SYS.WRP$_REPORTS_DETAILS: ADDED AUTOLIST FRAGMENT SYS_P463 (3) VALUES (( 1459785199, TO_DATE(' 2025-09-01 00:00:00', 'syyyy-mm-dd hh24:mi:ss', 'nls_calendar=gregorian') ))
+db238E   | TABLE SYS.WRP$_REPORTS_TIME_BANDS: ADDED AUTOLIST FRAGMENT SYS_P466 (3) VALUES (( 1459785199, TO_DATE(' 2025-09-01 00:00:00', 'syyyy-mm-dd hh24:mi:ss', 'nls_calendar=gregorian') ))
+db238E   | 2025-09-07T17:36:17.620126+00:00
+db238E   | Thread 1 advanced to log sequence 18 (LGWR switch),  current SCN: 3758958
+db238E   |   Current log# 1 seq# 18 mem# 0: /opt/oracle/oradata/FREE/redo01.log
+db238E   | 2025-09-07T17:36:17.644980+00:00
+db238E   | ARC1 (PID:146): Archived Log entry 7 added for B-1187728560.T-1.S-17 LOS:0x000000000039505f NXS:0x0000000000395b6c NAB:19958 ID 0xffff570323ef LAD:1 [krse.c:4865]
+db238E   | 2025-09-07T17:36:18.620304+00:00
+db238E   | Thread 1 advanced to log sequence 19 (LGWR switch),  current SCN: 3761471
+db238E   |   Current log# 2 seq# 19 mem# 0: /opt/oracle/oradata/FREE/redo02.log
+db238E   | 2025-09-07T17:36:18.668826+00:00
+db238E   | ARC2 (PID:148): Archived Log entry 8 added for B-1187728560.T-1.S-18 LOS:0x0000000000395b6c NXS:0x000000000039653f NAB:19961 ID 0xffff570323ef LAD:1 [krse.c:4865]
+db238W   | 2025-09-07T17:36:20.660941+00:00
+db238W   | Thread 1 advanced to log sequence 18 (LGWR switch),  current SCN: 3759876
+db238W   |   Current log# 1 seq# 18 mem# 0: /opt/oracle/oradata/FREE/redo01.log
+db238W   | 2025-09-07T17:36:20.683395+00:00
+db238W   | ARC1 (PID:145): Archived Log entry 7 added for B-1187728560.T-1.S-17 LOS:0x00000000003953c9 NXS:0x0000000000395f04 NAB:19957 ID 0xffff570323ef LAD:1 [krse.c:4865]
+db238W   | 2025-09-07T17:36:21.765042+00:00
+db238W   | Thread 1 cannot allocate new log, sequence 19
+db238W   | Checkpoint not complete
+db238W   |   Current log# 1 seq# 18 mem# 0: /opt/oracle/oradata/FREE/redo01.log
+db238W   | 2025-09-07T17:36:21.882303+00:00
+db238W   | Thread 1 advanced to log sequence 19 (LGWR switch),  current SCN: 3762258
+db238W   |   Current log# 2 seq# 19 mem# 0: /opt/oracle/oradata/FREE/redo02.log
+db238W   | 2025-09-07T17:36:21.921078+00:00
+db238W   | ARC2 (PID:147): Archived Log entry 8 added for B-1187728560.T-1.S-18 LOS:0x0000000000395f04 NXS:0x0000000000396852 NAB:19961 ID 0xffff570323ef LAD:1 [krse.c:4865]
+db238W   | 2025-09-07T17:40:17.686653+00:00
+db238W   | TABLE SYS.ACTIVITY_TABLE$: ADDED INTERVAL PARTITION SYS_P482 (2) VALUES LESS THAN (202)
+db238E   | 2025-09-07T17:40:17.626537+00:00
+db238E   | TABLE SYS.ACTIVITY_TABLE$: ADDED INTERVAL PARTITION SYS_P482 (2) VALUES LESS THAN (202)
+db238W   | 2025-09-07T17:45:17.828686+00:00
+db238W   | Resize operation completed for file# 3, fname /opt/oracle/oradata/FREE/sysaux01.dbf, old size 387328K, new size 407808K
+db238E   | 2025-09-07T17:45:17.772838+00:00
+db238E   | Resize operation completed for file# 3, fname /opt/oracle/oradata/FREE/sysaux01.dbf, old size 387328K, new size 407808K
+db238E   | 2025-09-07T17:56:21.869196+00:00
+db238E   | Thread 1 advanced to log sequence 20 (LGWR switch),  current SCN: 3769830
+db238E   |   Current log# 1 seq# 20 mem# 0: /opt/oracle/oradata/FREE/redo01.log
+db238E   | 2025-09-07T17:56:21.884664+00:00
+db238E   | ARC3 (PID:150): Archived Log entry 9 added for B-1187728560.T-1.S-19 LOS:0x000000000039653f NXS:0x00000000003985e6 NAB:19959 ID 0xffff570323ef LAD:1 [krse.c:4865]
+db238W   | 2025-09-07T17:56:24.781132+00:00
+db238W   | Thread 1 advanced to log sequence 20 (LGWR switch),  current SCN: 3770873
+db238W   |   Current log# 1 seq# 20 mem# 0: /opt/oracle/oradata/FREE/redo01.log
+db238W   | 2025-09-07T17:56:24.799686+00:00
+db238W   | ARC3 (PID:149): Archived Log entry 9 added for B-1187728560.T-1.S-19 LOS:0x0000000000396852 NXS:0x00000000003989f9 NAB:19951 ID 0xffff570323ef LAD:1 [krse.c:4865]
