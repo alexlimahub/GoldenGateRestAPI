@@ -1,0 +1,595 @@
+alexlima@Alexs-MacBook-Pro compose238aiGG % ./create_replication2.sh 
+Creating credentials for WEST...
+{
+  "$schema": "api:standardResponse",
+  "links": [
+    {
+      "rel": "canonical",
+      "href": "https://localhost:9090/services/v2/credentials/OracleGoldenGate/WEST",
+      "mediaType": "application/json"
+    },
+    {
+      "rel": "self",
+      "href": "https://localhost:9090/services/v2/credentials/OracleGoldenGate/WEST",
+      "mediaType": "application/json"
+    }
+  ],
+  "messages": [
+    {
+      "$schema": "ogg:message",
+      "title": "Credential store altered.",
+      "code": "OGG-15114",
+      "severity": "INFO",
+      "issued": "2025-09-07T18:06:16Z",
+      "type": "https://docs.oracle.com/en/middleware/goldengate/core/23.8/error-messages/"
+    }
+  ]
+}
+Creating GoldenGate user for Distribution Path...
+{
+  "$schema": "api:standardResponse",
+  "links": [
+    {
+      "rel": "canonical",
+      "href": "http://localhost:9091/services/v2/authorizations/Operator/oggnet",
+      "mediaType": "application/json"
+    },
+    {
+      "rel": "self",
+      "href": "http://localhost:9091/services/v2/authorizations/Operator/oggnet",
+      "mediaType": "application/json"
+    }
+  ],
+  "messages": []
+}
+Creating Network Alias for Distribution Path...
+{
+  "$schema": "api:standardResponse",
+  "links": [
+    {
+      "rel": "canonical",
+      "href": "https://localhost:9090/services/v2/credentials/Network/oggnet",
+      "mediaType": "application/json"
+    },
+    {
+      "rel": "self",
+      "href": "https://localhost:9090/services/v2/credentials/Network/oggnet",
+      "mediaType": "application/json"
+    }
+  ],
+  "messages": [
+    {
+      "$schema": "ogg:message",
+      "title": "Credential store altered.",
+      "code": "OGG-15114",
+      "severity": "INFO",
+      "issued": "2025-09-07T18:06:16Z",
+      "type": "https://docs.oracle.com/en/middleware/goldengate/core/23.8/error-messages/"
+    }
+  ]
+}
+Creating Custom Profile 'WEST-profile'...
+{
+  "$schema": "api:standardResponse",
+  "links": [
+    {
+      "rel": "canonical",
+      "href": "https://localhost:9090/services/WEST/adminsrvr/v2/config/types/ogg:managedProcessSettings/values/ogg:managedProcessSettings:WEST-profile",
+      "mediaType": "application/json"
+    },
+    {
+      "rel": "self",
+      "href": "https://localhost:9090/services/WEST/adminsrvr/v2/config/types/ogg:managedProcessSettings/values/ogg:managedProcessSettings:WEST-profile",
+      "mediaType": "application/json"
+    }
+  ],
+  "messages": []
+}
+Setting Custom Profile 'WEST-profile' as Default...
+{
+  "$schema": "api:standardResponse",
+  "links": [
+    {
+      "rel": "canonical",
+      "href": "https://localhost:9090/services/WEST/adminsrvr/v2/config/types/ogg:configDataDescription/values/ogg:managedProcessSettings:WEST-profile",
+      "mediaType": "application/json"
+    },
+    {
+      "rel": "self",
+      "href": "https://localhost:9090/services/WEST/adminsrvr/v2/config/types/ogg:configDataDescription/values/ogg:managedProcessSettings:WEST-profile",
+      "mediaType": "application/json"
+    }
+  ],
+  "messages": []
+}
+Adding SchemaTrandata for WEST...
+{
+  "$schema": "api:standardResponse",
+  "links": [
+    {
+      "rel": "canonical",
+      "href": "https://localhost:9090/services/v2/connections/OracleGoldenGate.WEST/trandata/schema",
+      "mediaType": "application/json"
+    },
+    {
+      "rel": "self",
+      "href": "https://localhost:9090/services/v2/connections/OracleGoldenGate.WEST/trandata/schema",
+      "mediaType": "application/json"
+    }
+  ],
+  "messages": [
+    {
+      "$schema": "ogg:message",
+      "title": "SCHEMATRANDATA has been added on schema \"hr\".",
+      "code": "OGG-01788",
+      "severity": "INFO",
+      "issued": "2025-09-07T18:06:18Z",
+      "type": "https://docs.oracle.com/en/middleware/goldengate/core/23.8/error-messages/"
+    },
+    {
+      "$schema": "ogg:message",
+      "title": "Partial JSON Update is disabled on schema \"hr\".",
+      "code": "OGG-30198",
+      "severity": "INFO",
+      "issued": "2025-09-07T18:06:18Z",
+      "type": "https://docs.oracle.com/en/middleware/goldengate/core/23.8/error-messages/"
+    },
+    {
+      "$schema": "ogg:message",
+      "title": "SCHEMATRANDATA for scheduling columns has been added on schema \"hr\".",
+      "code": "OGG-01976",
+      "severity": "INFO",
+      "issued": "2025-09-07T18:06:18Z",
+      "type": "https://docs.oracle.com/en/middleware/goldengate/core/23.8/error-messages/"
+    },
+    {
+      "$schema": "ogg:message",
+      "title": "SCHEMATRANDATA for all columns has been added on schema \"hr\".",
+      "code": "OGG-01977",
+      "severity": "INFO",
+      "issued": "2025-09-07T18:06:18Z",
+      "type": "https://docs.oracle.com/en/middleware/goldengate/core/23.8/error-messages/"
+    },
+    {
+      "$schema": "ogg:message",
+      "title": "Schema level PREPARECSN set to mode NOWAIT on schema \"hr\"",
+      "code": "OGG-10154",
+      "severity": "INFO",
+      "issued": "2025-09-07T18:06:18Z",
+      "type": "https://docs.oracle.com/en/middleware/goldengate/core/23.8/error-messages/"
+    }
+  ]
+}
+Adding Heartbeat Table for WEST...
+{
+  "$schema": "api:standardResponse",
+  "links": [
+    {
+      "rel": "canonical",
+      "href": "https://localhost:9090/services/v2/connections/OracleGoldenGate.WEST/tables/heartbeat",
+      "mediaType": "application/json"
+    },
+    {
+      "rel": "self",
+      "href": "https://localhost:9090/services/v2/connections/OracleGoldenGate.WEST/tables/heartbeat",
+      "mediaType": "application/json"
+    }
+  ],
+  "messages": [
+    {
+      "$schema": "ogg:message",
+      "title": "Successfully added heartbeat table.",
+      "code": "OGG-14101",
+      "severity": "INFO",
+      "issued": "2025-09-07T18:06:18Z",
+      "type": "https://docs.oracle.com/en/middleware/goldengate/core/23.8/error-messages/"
+    }
+  ]
+}
+Adding Checkpoint Table for WEST...
+{
+  "$schema": "api:standardResponse",
+  "links": [
+    {
+      "rel": "canonical",
+      "href": "https://localhost:9090/services/v2/connections/OracleGoldenGate.WEST/tables/checkpoint",
+      "mediaType": "application/json"
+    },
+    {
+      "rel": "self",
+      "href": "https://localhost:9090/services/v2/connections/OracleGoldenGate.WEST/tables/checkpoint",
+      "mediaType": "application/json"
+    }
+  ],
+  "messages": []
+}
+Adding MASTERKEY for WEST...
+{
+  "$schema": "api:standardResponse",
+  "links": [
+    {
+      "rel": "canonical",
+      "href": "https://localhost:9090/services/v2/masterkey",
+      "mediaType": "application/json"
+    },
+    {
+      "rel": "self",
+      "href": "https://localhost:9090/services/v2/masterkey",
+      "mediaType": "application/json"
+    }
+  ],
+  "messages": [
+    {
+      "$schema": "ogg:message",
+      "title": "Created version 1 of master encryption key 'OGG_DEFAULT_MASTERKEY' in Oracle Wallet.",
+      "code": "OGG-06142",
+      "severity": "INFO",
+      "issued": "2025-09-07T18:06:19Z",
+      "type": "https://docs.oracle.com/en/middleware/goldengate/core/23.8/error-messages/"
+    }
+  ],
+  "response": {
+    "items": [
+      {
+        "links": [
+          {
+            "rel": "parent",
+            "href": "https://localhost:9090/services/v2/masterkey",
+            "mediaType": "application/json"
+          },
+          {
+            "rel": "canonical",
+            "href": "https://localhost:9090/services/v2/masterkey/1",
+            "mediaType": "application/json"
+          }
+        ],
+        "$schema": "ogg:collectionItem",
+        "name": "1"
+      }
+    ],
+    "$schema": "ogg:collection"
+  }
+}
+Creating credentials for EAST...
+{
+  "$schema": "api:standardResponse",
+  "links": [
+    {
+      "rel": "canonical",
+      "href": "https://localhost:8080/services/v2/credentials/OracleGoldenGate/EAST",
+      "mediaType": "application/json"
+    },
+    {
+      "rel": "self",
+      "href": "https://localhost:8080/services/v2/credentials/OracleGoldenGate/EAST",
+      "mediaType": "application/json"
+    }
+  ],
+  "messages": [
+    {
+      "$schema": "ogg:message",
+      "title": "Credential store altered.",
+      "code": "OGG-15114",
+      "severity": "INFO",
+      "issued": "2025-09-07T18:06:19Z",
+      "type": "https://docs.oracle.com/en/middleware/goldengate/core/23.8/error-messages/"
+    }
+  ]
+}
+Creating GoldenGate user for Distribution Path...
+{
+  "$schema": "api:standardResponse",
+  "links": [
+    {
+      "rel": "canonical",
+      "href": "http://localhost:8081/services/v2/authorizations/Operator/oggnet",
+      "mediaType": "application/json"
+    },
+    {
+      "rel": "self",
+      "href": "http://localhost:8081/services/v2/authorizations/Operator/oggnet",
+      "mediaType": "application/json"
+    }
+  ],
+  "messages": []
+}
+Creating Network Alias for Distribution Path...
+{
+  "$schema": "api:standardResponse",
+  "links": [
+    {
+      "rel": "canonical",
+      "href": "https://localhost:8080/services/v2/credentials/Network/oggnet",
+      "mediaType": "application/json"
+    },
+    {
+      "rel": "self",
+      "href": "https://localhost:8080/services/v2/credentials/Network/oggnet",
+      "mediaType": "application/json"
+    }
+  ],
+  "messages": [
+    {
+      "$schema": "ogg:message",
+      "title": "Credential store altered.",
+      "code": "OGG-15114",
+      "severity": "INFO",
+      "issued": "2025-09-07T18:06:20Z",
+      "type": "https://docs.oracle.com/en/middleware/goldengate/core/23.8/error-messages/"
+    }
+  ]
+}
+Creating Custom Profile 'EAST-profile'...
+{
+  "$schema": "api:standardResponse",
+  "links": [
+    {
+      "rel": "canonical",
+      "href": "https://localhost:8080/services/EAST/adminsrvr/v2/config/types/ogg:managedProcessSettings/values/ogg:managedProcessSettings:EAST-profile",
+      "mediaType": "application/json"
+    },
+    {
+      "rel": "self",
+      "href": "https://localhost:8080/services/EAST/adminsrvr/v2/config/types/ogg:managedProcessSettings/values/ogg:managedProcessSettings:EAST-profile",
+      "mediaType": "application/json"
+    }
+  ],
+  "messages": []
+}
+Setting Custom Profile 'EAST-profile' as Default...
+{
+  "$schema": "api:standardResponse",
+  "links": [
+    {
+      "rel": "canonical",
+      "href": "https://localhost:8080/services/EAST/adminsrvr/v2/config/types/ogg:configDataDescription/values/ogg:managedProcessSettings:EAST-profile",
+      "mediaType": "application/json"
+    },
+    {
+      "rel": "self",
+      "href": "https://localhost:8080/services/EAST/adminsrvr/v2/config/types/ogg:configDataDescription/values/ogg:managedProcessSettings:EAST-profile",
+      "mediaType": "application/json"
+    }
+  ],
+  "messages": []
+}
+Adding SchemaTrandata for EAST...
+{
+  "$schema": "api:standardResponse",
+  "links": [
+    {
+      "rel": "canonical",
+      "href": "https://localhost:8080/services/v2/connections/OracleGoldenGate.EAST/trandata/schema",
+      "mediaType": "application/json"
+    },
+    {
+      "rel": "self",
+      "href": "https://localhost:8080/services/v2/connections/OracleGoldenGate.EAST/trandata/schema",
+      "mediaType": "application/json"
+    }
+  ],
+  "messages": [
+    {
+      "$schema": "ogg:message",
+      "title": "SCHEMATRANDATA has been added on schema \"hr\".",
+      "code": "OGG-01788",
+      "severity": "INFO",
+      "issued": "2025-09-07T18:06:21Z",
+      "type": "https://docs.oracle.com/en/middleware/goldengate/core/23.8/error-messages/"
+    },
+    {
+      "$schema": "ogg:message",
+      "title": "Partial JSON Update is disabled on schema \"hr\".",
+      "code": "OGG-30198",
+      "severity": "INFO",
+      "issued": "2025-09-07T18:06:21Z",
+      "type": "https://docs.oracle.com/en/middleware/goldengate/core/23.8/error-messages/"
+    },
+    {
+      "$schema": "ogg:message",
+      "title": "SCHEMATRANDATA for scheduling columns has been added on schema \"hr\".",
+      "code": "OGG-01976",
+      "severity": "INFO",
+      "issued": "2025-09-07T18:06:21Z",
+      "type": "https://docs.oracle.com/en/middleware/goldengate/core/23.8/error-messages/"
+    },
+    {
+      "$schema": "ogg:message",
+      "title": "SCHEMATRANDATA for all columns has been added on schema \"hr\".",
+      "code": "OGG-01977",
+      "severity": "INFO",
+      "issued": "2025-09-07T18:06:21Z",
+      "type": "https://docs.oracle.com/en/middleware/goldengate/core/23.8/error-messages/"
+    },
+    {
+      "$schema": "ogg:message",
+      "title": "Schema level PREPARECSN set to mode NOWAIT on schema \"hr\"",
+      "code": "OGG-10154",
+      "severity": "INFO",
+      "issued": "2025-09-07T18:06:21Z",
+      "type": "https://docs.oracle.com/en/middleware/goldengate/core/23.8/error-messages/"
+    }
+  ]
+}
+Adding Heartbeat Table for EAST...
+{
+  "$schema": "api:standardResponse",
+  "links": [
+    {
+      "rel": "canonical",
+      "href": "https://localhost:8080/services/v2/connections/OracleGoldenGate.EAST/tables/heartbeat",
+      "mediaType": "application/json"
+    },
+    {
+      "rel": "self",
+      "href": "https://localhost:8080/services/v2/connections/OracleGoldenGate.EAST/tables/heartbeat",
+      "mediaType": "application/json"
+    }
+  ],
+  "messages": [
+    {
+      "$schema": "ogg:message",
+      "title": "Successfully added heartbeat table.",
+      "code": "OGG-14101",
+      "severity": "INFO",
+      "issued": "2025-09-07T18:06:21Z",
+      "type": "https://docs.oracle.com/en/middleware/goldengate/core/23.8/error-messages/"
+    }
+  ]
+}
+Adding Checkpoint Table for EAST...
+{
+  "$schema": "api:standardResponse",
+  "links": [
+    {
+      "rel": "canonical",
+      "href": "https://localhost:8080/services/v2/connections/OracleGoldenGate.EAST/tables/checkpoint",
+      "mediaType": "application/json"
+    },
+    {
+      "rel": "self",
+      "href": "https://localhost:8080/services/v2/connections/OracleGoldenGate.EAST/tables/checkpoint",
+      "mediaType": "application/json"
+    }
+  ],
+  "messages": []
+}
+Creating Extract EWEST on WEST...
+{
+  "$schema": "api:standardResponse",
+  "links": [
+    {
+      "rel": "canonical",
+      "href": "https://localhost:9090/services/v2/extracts/EWEST",
+      "mediaType": "application/json"
+    },
+    {
+      "rel": "self",
+      "href": "https://localhost:9090/services/v2/extracts/EWEST",
+      "mediaType": "application/json"
+    }
+  ],
+  "messages": [
+    {
+      "$schema": "ogg:message",
+      "title": "Integrated Extract added.",
+      "code": "OGG-08100",
+      "severity": "INFO",
+      "issued": "2025-09-07T18:06:22Z",
+      "type": "https://docs.oracle.com/en/middleware/goldengate/core/23.8/error-messages/"
+    },
+    {
+      "$schema": "ogg:message",
+      "title": "Extract group EWEST successfully registered with database at SCN 3773365.",
+      "code": "OGG-02003",
+      "severity": "INFO",
+      "issued": "2025-09-07T18:06:25Z",
+      "type": "https://docs.oracle.com/en/middleware/goldengate/core/23.8/error-messages/"
+    },
+    {
+      "$schema": "ogg:message",
+      "title": "Parameter file EWEST.prm passed validity check.",
+      "code": "OGG-10183",
+      "severity": "INFO",
+      "issued": "2025-09-07T18:06:26Z",
+      "type": "https://docs.oracle.com/en/middleware/goldengate/core/23.8/error-messages/"
+    },
+    {
+      "$schema": "ogg:message",
+      "title": "Extract group EWEST starting.",
+      "code": "OGG-00975",
+      "severity": "INFO",
+      "issued": "2025-09-07T18:06:26Z",
+      "type": "https://docs.oracle.com/en/middleware/goldengate/core/23.8/error-messages/"
+    },
+    {
+      "$schema": "ogg:message",
+      "title": "Extract group EWEST started.",
+      "code": "OGG-15426",
+      "severity": "INFO",
+      "issued": "2025-09-07T18:06:26Z",
+      "type": "https://docs.oracle.com/en/middleware/goldengate/core/23.8/error-messages/"
+    }
+  ]
+}
+Creating Distribution Path DPWE...
+{
+  "$schema": "api:standardResponse",
+  "links": [
+    {
+      "rel": "canonical",
+      "href": "https://localhost:9090/services/v2/sources/DPWE",
+      "mediaType": "application/json"
+    },
+    {
+      "rel": "self",
+      "href": "https://localhost:9090/services/v2/sources/DPWE",
+      "mediaType": "application/json"
+    }
+  ],
+  "messages": [
+    {
+      "$schema": "ogg:message",
+      "title": "The path 'DPWE' has been added.",
+      "code": "OGG-08511",
+      "severity": "INFO",
+      "issued": "2025-09-07T18:06:27Z",
+      "type": "https://docs.oracle.com/en/middleware/goldengate/core/23.8/error-messages/"
+    }
+  ]
+}
+Successfully copied 2.56kB to /Users/alexlima/Library/CloudStorage/OneDrive-OracleCorporation/ORACLE_FTE_Files/LABS/Docker/compose238aiGG/.
+Successfully copied 2.56kB to ogg238E:/u02/Deployment/var/lib/wallet/cwallet.sso
+Creating Replicat RWEST...
+{
+  "$schema": "api:standardResponse",
+  "links": [
+    {
+      "rel": "canonical",
+      "href": "https://localhost:8080/services/v2/replicats/RWEST",
+      "mediaType": "application/json"
+    },
+    {
+      "rel": "self",
+      "href": "https://localhost:8080/services/v2/replicats/RWEST",
+      "mediaType": "application/json"
+    }
+  ],
+  "messages": [
+    {
+      "$schema": "ogg:message",
+      "title": "Parallel Replicat added.",
+      "code": "OGG-08100",
+      "severity": "INFO",
+      "issued": "2025-09-07T18:06:28Z",
+      "type": "https://docs.oracle.com/en/middleware/goldengate/core/23.8/error-messages/"
+    },
+    {
+      "$schema": "ogg:message",
+      "title": "Parameter file RWEST.prm passed validity check.",
+      "code": "OGG-10183",
+      "severity": "INFO",
+      "issued": "2025-09-07T18:06:28Z",
+      "type": "https://docs.oracle.com/en/middleware/goldengate/core/23.8/error-messages/"
+    },
+    {
+      "$schema": "ogg:message",
+      "title": "Replicat group RWEST starting.",
+      "code": "OGG-00975",
+      "severity": "INFO",
+      "issued": "2025-09-07T18:06:28Z",
+      "type": "https://docs.oracle.com/en/middleware/goldengate/core/23.8/error-messages/"
+    },
+    {
+      "$schema": "ogg:message",
+      "title": "Replicat group RWEST started.",
+      "code": "OGG-15445",
+      "severity": "INFO",
+      "issued": "2025-09-07T18:06:28Z",
+      "type": "https://docs.oracle.com/en/middleware/goldengate/core/23.8/error-messages/"
+    }
+  ]
+}
+
+Execution time: 13 seconds
+GoldenGate setup completed successfully!
