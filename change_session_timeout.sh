@@ -1,4 +1,5 @@
 #-- This example allow you to modify the WebUI session timeout settings
+#-- Author: Alex Lima
 #-- Documentation for this options:
 #-- https://docs.oracle.com/en/middleware/goldengate/core/23/oggra/op-services-version-deployments-deployment-services-service-patch.html
 
