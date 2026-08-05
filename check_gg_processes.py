@@ -2,7 +2,7 @@
 # GoldenGate HUB Check Extract and Replicats
 #
 # Author: Alex Lima
-# 
+#
 # Execution: $python3 check_gg_processes.py
 #
 # Config: Set GoldenGate HUR URL, PORT and Authentication:  goldengate_hub_url and header
@@ -20,10 +20,10 @@ os.system('clear')
 requests.packages.urllib3.disable_warnings()
 
 # Url and PORT for GOldengate HUB
-goldengate_hub_url="https://<IP or hostname>"
+goldengate_hub_url="https://localhost:8080"
 
 # Authentication
-header = {"Authorization" : "Basic b2dnYWRtaW46eTR2RkdoV242SUNTLXNxZA=="}
+header = {"Authorization" : "Basic b2dnYWRtaW46V2VsYxxx29tZSMjMTIz"}
 ##---
 
 # DIsplay the Header content
@@ -32,9 +32,9 @@ def display_header():
  print("-- GoldenGate HUB Status for " + goldengate_hub_url)
  print("---------------------------------------------------------")
  print()
- print(f"{'Process Type':13s}", f"{'Process Name':13s}", f"{'Status':10s}", f"{'Sequence':12s}", f"{'RBA':12s}", 
-       f"{'Lag in Sec':12s}", f"{'Since Last Checkpoint':23s}", f"{'File Name':10s}", f"{'Connection':15s}" ) 
- print ("="*135)  
+ print(f"{'Process Type':13s}", f"{'Process Name':13s}", f"{'Status':10s}", f"{'Sequence':12s}", f"{'RBA':12s}",
+       f"{'Lag in Sec':12s}", f"{'Since Last Checkpoint':23s}", f"{'File Name':10s}", f"{'Connection':15s}" )
+ print ("="*135)
 
 # Print Extract and Replicat Processes Status
 def print_proc_status(proc_name, hub_url, proc_type):
@@ -58,7 +58,7 @@ def print_proc_status(proc_name, hub_url, proc_type):
   rsequence = rdata['response']['targets'][0]['sequence']
   roffset = rdata['response']['targets'][0]['offset']
   ralias = rdata['response']['credentials']['alias']
-  
+
   rdata_info=response_info.json()
   rlag = rdata_info['response']['lag']
   rlagSinceCheckpoint = rdata_info['response']['sinceLagReported']
